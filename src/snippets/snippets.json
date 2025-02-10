@@ -1,6 +1,6 @@
 {
-  "Galaxy Accordion": {
-    "prefix": "accordion",
+  "React Native Galaxy Accordion": {
+    "prefix": "accordion-app",
     "body": [
       "import React, { useState } from \"react\";",
       "import { View, Text, Pressable, ScrollView } from \"react-native\";",
@@ -72,10 +72,10 @@
       "",
       "export default Accordion;"
     ],
-    "description": "A default accordion component"
+    "description": "A default accordion component for react native"
   },
-  "Galaxy Alert": {
-    "prefix": "alert",
+  "React Native Galaxy Alert": {
+    "prefix": "alert-app",
     "body": [
       "import React from \"react\";",
       "import { View, Text, TouchableOpacity } from \"react-native\";",
@@ -99,10 +99,10 @@
       "",
       "export default Alert;"
     ],
-    "description": "A default alert component"
+    "description": "A default alert component for react native"
   },
-  "Galaxy Alert JsxOnly": {
-    "prefix": "alert-jsx",
+  "React Native Galaxy Alert JsxOnly": {
+    "prefix": "alert-app-jsx",
     "body": [
       "    <View className=\"rounded-xl border border-gray-300 bg-green-50 p-4 w-64\">",
       "      <View className=\"flex flex-row items-start gap-4\">",
@@ -116,10 +116,10 @@
       "      </View>",
       "    </View>"
     ],
-    "description": "A default alert component (jsx only)"
+    "description": "A default alert component for react native (jsx only)"
   },
-  "KrytharWail Alert": {
-    "prefix": "alert",
+  "React Native KrytharWail Alert": {
+    "prefix": "alert-app",
     "body": [
       "import React from \"react\";",
       "import { View, Text } from \"react-native\";",
@@ -137,10 +137,10 @@
       "",
       "export default Alert;"
     ],
-    "description": "Alert component with a left green border,"
+    "description": "Alert component with a left green border for react native."
   },
-  "KrytharWail Alert JsxOnly": {
-    "prefix": "alert-jsx",
+  "React Native KrytharWail Alert JsxOnly": {
+    "prefix": "alert-app-jsx",
     "body": [
       "    <View className=\"rounded-xl border-l-4 border-green-500 bg-green-50 p-4 w-64\">",
       "      <Text className=\"text-lg font-bold\">Krythar Wail</Text>",
@@ -149,10 +149,10 @@
       "      </Text>",
       "    </View>"
     ],
-    "description": "Alert component with a left green border (jsx only)"
+    "description": "Alert component with a left green border for react native (jsx only)"
   },
-  "Galaxy Avatar": {
-    "prefix": "avatar",
+  "React Native Galaxy Avatar": {
+    "prefix": "avatar-app",
     "body": [
       "import React from \"react\";",
       "import { View, Image } from \"react-native\";",
@@ -170,10 +170,10 @@
       "",
       "export default Avatar;"
     ],
-    "description": "A default avatar component"
+    "description": "A default avatar component for react native"
   },
-  "Galaxy Avatar JsxOnly": {
-    "prefix": "avatar-jsx",
+  "React Native Galaxy Avatar JsxOnly": {
+    "prefix": "avatar-app-jsx",
     "body": [
       "    <View className=\"w-16 h-16 rounded-full bg-gray-200 flex justify-center items-center overflow-hidden\">",
       "      <Image",
@@ -182,10 +182,10 @@
       "      />",
       "    </View>"
     ],
-    "description": "A default avatar component (jsx only)"
+    "description": "A default avatar component for react native (jsx only)"
   },
-  "Galaxy Badge": {
-    "prefix": "badge",
+  "React Native Galaxy Badge": {
+    "prefix": "badge-app",
     "body": [
       "import React from 'react';",
       "import { View, Text } from 'react-native';",
@@ -200,19 +200,19 @@
       "",
       "export default Badge;"
     ],
-    "description": "A default badge component"
+    "description": "A default badge component for react native"
   },
-  "Galaxy Badge JsxOnly": {
-    "prefix": "badge-jsx",
+  "React Native Galaxy Badge JsxOnly": {
+    "prefix": "badge-app-jsx",
     "body": [
       "        <View className=\"bg-black px-2 py-1 rounded-full flex items-center justify-center w-20\">",
       "            <Text className=\"text-white text-xs\">Badge</Text>",
       "        </View>"
     ],
-    "description": "A default badge component (jsx only)"
+    "description": "A default badge component for react native (jsx only)"
   },
-  "Galaxy Breadcrumb": {
-    "prefix": "breadcrumb",
+  "React Native Galaxy Breadcrumb": {
+    "prefix": "breadcrumb-app",
     "body": [
       "import React from \"react\";",
       "import { View, Text, TouchableOpacity } from \"react-native\";",
@@ -248,10 +248,10 @@
       "",
       "export default Breadcrumb;"
     ],
-    "description": "A default breadcrumb navigation component with touchable links and icons"
+    "description": "A default breadcrumb navigation component with touchable links and icons for react native"
   },
-  "Galaxy Breadcrumb JsxOnly": {
-    "prefix": "breadcrumb-jsx",
+  "React Native Galaxy Breadcrumb JsxOnly": {
+    "prefix": "breadcrumb-app-jsx",
     "body": [
       "    <View className=\"flex flex-row items-center\">",
       "      <TouchableOpacity>",
@@ -277,10 +277,10 @@
       "      </TouchableOpacity>",
       "    </View>"
     ],
-    "description": "A default breadcrumb navigation component with touchable links and icons (jsx only)"
+    "description": "A default breadcrumb navigation component with touchable links and icons for react native (jsx only)"
   },
-  "Earth Breadcrumb": {
-    "prefix": "breadcrumb",
+  "React Native Earth Breadcrumb": {
+    "prefix": "breadcrumb-app",
     "body": [
       "import React from \"react\";",
       "import { View, Text, TouchableOpacity } from \"react-native\";",
@@ -316,10 +316,10 @@
       "",
       "export default Breadcrumb;"
     ],
-    "description": "A breadcrumb navigation component for earth navigation"
+    "description": "A breadcrumb navigation component for earth navigation for react native"
   },
-  "Earth Breadcrumb JsxOnly": {
-    "prefix": "breadcrumb-jsx",
+  "React Native Earth Breadcrumb JsxOnly": {
+    "prefix": "breadcrumb-app-jsx",
     "body": [
       "    <View className=\"flex flex-row items-center\">",
       "      <TouchableOpacity>",
@@ -345,10 +345,10 @@
       "      </TouchableOpacity>",
       "    </View>"
     ],
-    "description": "A breadcrumb navigation component for earth navigation (jsx only)"
+    "description": "A breadcrumb navigation component for earth navigation for react native (jsx only)"
   },
-  "Galaxy Button": {
-    "prefix": "button",
+  "React Native Galaxy Button": {
+    "prefix": "button-app",
     "body": [
       "import React from 'react';",
       "import { Pressable, Text } from 'react-native';",
@@ -363,19 +363,19 @@
       "",
       "export default Button;"
     ],
-    "description": "A default button"
+    "description": "A default button for react native"
   },
-  "Galaxy Button JsxOnly": {
-    "prefix": "button-jsx",
+  "React Native Galaxy Button JsxOnly": {
+    "prefix": "button-app-jsx",
     "body": [
       "        <Pressable className=\"bg-black py-2 px-4 rounded-md flex items-center justify-center w-52\">",
       "            <Text className=\"text-white text-base\">Galaxy Button</Text>",
       "        </Pressable>"
     ],
-    "description": "A default button (jsx only)"
+    "description": "A default button for react native (jsx only)"
   },
-  "Earth Button": {
-    "prefix": "button",
+  "React Native Earth Button": {
+    "prefix": "button-app",
     "body": [
       "import React from 'react';",
       "import { Pressable, Text } from 'react-native';",
@@ -392,20 +392,20 @@
       "",
       "export default Button;"
     ],
-    "description": "A button with an icon"
+    "description": "A button with an icon for react native"
   },
-  "Earth Button JsxOnly": {
-    "prefix": "button-jsx",
+  "React Native Earth Button JsxOnly": {
+    "prefix": "button-app-jsx",
     "body": [
       "        <Pressable className=\"bg-black border py-2 px-4 rounded-md flex flex-row items-center justify-center w-52\">",
       "            <Text className=\"text-white text-base mr-1\">Earth Button</Text>",
       "            <MaterialCommunityIcons name=\"alien-outline\" size={20} color=\"white\" />",
       "        </Pressable>"
     ],
-    "description": "A button with an icon (jsx only)"
+    "description": "A button with an icon for react native (jsx only)"
   },
-  "Galaxy Card": {
-    "prefix": "card",
+  "React Native Galaxy Card": {
+    "prefix": "card-app",
     "body": [
       "import React from \"react\";",
       "import { View, Text, Image, TouchableOpacity } from \"react-native\";",
@@ -438,10 +438,10 @@
       "",
       "export default Card;"
     ],
-    "description": "A default card component featuring an alien-themed image and content."
+    "description": "A default card component featuring an alien-themed image and content for react native."
   },
-  "Galaxy Card JsxOnly": {
-    "prefix": "card-jsx",
+  "React Native Galaxy Card JsxOnly": {
+    "prefix": "card-app-jsx",
     "body": [
       "    <View className=\"bg-white rounded-lg overflow-hidden shadow-lg m-4\">",
       "      <Image",
@@ -465,10 +465,10 @@
       "      </View>",
       "    </View>"
     ],
-    "description": "A default card component featuring an alien-themed image and content (jsx only)."
+    "description": "A default card component featuring an alien-themed image and content for react native (jsx only)."
   },
-  "Earth Card": {
-    "prefix": "card",
+  "React Native Earth Card": {
+    "prefix": "card-app",
     "body": [
       "import React from \"react\";",
       "import { View, Text, ImageBackground, TouchableOpacity } from \"react-native\";",
@@ -505,10 +505,10 @@
       "",
       "export default Card;"
     ],
-    "description": "A card component featuring an alien-themed image background with content overlay."
+    "description": "A card component featuring an alien-themed image background with content overlay for react native."
   },
-  "Earth Card JsxOnly": {
-    "prefix": "card-jsx",
+  "React Native Earth Card JsxOnly": {
+    "prefix": "card-app-jsx",
     "body": [
       "    <View className=\"rounded-lg overflow-hidden shadow-lg w-4/5\">",
       "      <ImageBackground",
@@ -536,10 +536,10 @@
       "      </ImageBackground>",
       "    </View>"
     ],
-    "description": "A card component featuring an alien-themed image background with content overlay (jsx only)"
+    "description": "A card component featuring an alien-themed image background with content overlay for react native (jsx only)"
   },
-  "Jupiter Card": {
-    "prefix": "card",
+  "React Native Jupiter Card": {
+    "prefix": "card-app",
     "body": [
       "import React from \"react\";",
       "import { View, Text } from \"react-native\";",
@@ -567,10 +567,10 @@
       "",
       "export default Card;"
     ],
-    "description": "A card component featuring an icon with text content below"
+    "description": "A card component featuring an icon with text content below for react native"
   },
-  "Jupiter Card JsxOnly": {
-    "prefix": "card-jsx",
+  "React Native Jupiter Card JsxOnly": {
+    "prefix": "card-app-jsx",
     "body": [
       "    <View className=\"flex flex-col items-center bg-black p-7 shadow-md w-4/5 h-64\">",
       "      <MaterialIcons",
@@ -588,10 +588,10 @@
       "      </Text>",
       "    </View>"
     ],
-    "description": "A card component featuring an icon with text content below (jsx only)"
+    "description": "A card component featuring an icon with text content below for react native (jsx only)"
   },
-  "Pluto Card": {
-    "prefix": "card",
+  "React Native Pluto Card": {
+    "prefix": "card-app",
     "body": [
       "import React from \"react\";",
       "import { View, Text } from \"react-native\";",
@@ -599,7 +599,6 @@
       "",
       "const Card = () => {",
       "  return (",
-      "    <View className=\"flex justify-center\">",
       "      <View className=\"w-3/5 h-44 bg-black p-6\">",
       "        <View className=\"flex items-center justify-center w-12 h-12 bg-white rounded-full mb-6\">",
       "          <AntDesign name=\"barschart\" size={24} color=\"#000000\" />",
@@ -608,18 +607,16 @@
       "          Bar chart showing energy usage",
       "        </Text>",
       "      </View>",
-      "    </View>",
       "  );",
       "};",
       "",
       "export default Card;"
     ],
-    "description": "A small card component featuring an icon with text content below"
+    "description": "A small card component featuring an icon with text content below for react native."
   },
-  "Pluto Card JsxOnly": {
-    "prefix": "card-jsx",
+  "React Native Pluto Card JsxOnly": {
+    "prefix": "card-app-jsx",
     "body": [
-      "    <View className=\"flex justify-center\">",
       "      <View className=\"w-3/5 h-44 bg-black p-6\">",
       "        <View className=\"flex items-center justify-center w-12 h-12 bg-white rounded-full mb-6\">",
       "          <AntDesign name=\"barschart\" size={24} color=\"#000000\" />",
@@ -627,13 +624,12 @@
       "        <Text className=\"text-lg text-white font-bold\">",
       "          Bar chart showing energy usage",
       "        </Text>",
-      "      </View>",
       "    </View>"
     ],
-    "description": "A small card component featuring an icon with text content below (jsx only)"
+    "description": "A small card component featuring an icon with text content below for react native (jsx only)"
   },
-  "Mars Card": {
-    "prefix": "card",
+  "React Native Mars Card": {
+    "prefix": "card-app",
     "body": [
       "import React from \"react\";",
       "import { View, Text, Image, TouchableOpacity } from \"react-native\";",
@@ -674,10 +670,10 @@
       "",
       "export default Card;"
     ],
-    "description": "A transactional card component displaying account balance, currency selection, and action buttons for deposit and transfer."
+    "description": "A transactional card component displaying account balance, currency selection, and action buttons for deposit and transfer for react native."
   },
-  "Mars Card JsxOnly": {
-    "prefix": "card-jsx",
+  "React Native Mars Card JsxOnly": {
+    "prefix": "card-app-jsx",
     "body": [
       "    <View className=\"w-full py-8 rounded-3xl border border-black items-center bg-white\">",
       "      <View className=\"flex-row items-center justify-between bg-black py-2 px-4 rounded-full mb-4\">",
@@ -708,10 +704,10 @@
       "      </View>",
       "    </View>"
     ],
-    "description": "A transactional card component displaying account balance, currency selection, and action buttons for deposit and transfer (jsx only)"
+    "description": "A transactional card component displaying account balance, currency selection, and action buttons for deposit and transfer for react native (jsx only)."
   },
-  "Galaxy Carousel": {
-    "prefix": "carousel",
+  "React Native Galaxy Carousel": {
+    "prefix": "carousel-app",
     "body": [
       "import React, { useState } from \"react\";",
       "import { View, Text, Pressable } from \"react-native\";",
@@ -771,10 +767,10 @@
       "",
       "export default Carousel;"
     ],
-    "description": "A simple carousel slider component with navigation buttons and indicators."
+    "description": "A simple carousel slider component with navigation buttons and indicators for react native."
   },
-  "Galaxy Checkbox": {
-    "prefix": "checkbox",
+  "React Native Galaxy Checkbox": {
+    "prefix": "checkbox-app",
     "body": [
       "import React from \"react\";",
       "import { View, Text, Pressable } from \"react-native\";",
@@ -803,10 +799,10 @@
       "",
       "export default CheckBox;"
     ],
-    "description": "A simple checkbox component with selectable options."
+    "description": "A simple checkbox component with selectable options for react native."
   },
-  "Galaxy Checkbox JsxOnly": {
-    "prefix": "checkbox-jsx",
+  "React Native Galaxy Checkbox JsxOnly": {
+    "prefix": "checkbox-app-jsx",
     "body": [
       "    <View className=\"p-4\">",
       "      <Text className=\"sr-only\">Checkboxes</Text>",
@@ -826,10 +822,10 @@
       "      </View>",
       "    </View>"
     ],
-    "description": "A simple checkbox component with selectable options (jsx only)"
+    "description": "A simple checkbox component with selectable options for react native (jsx only)"
   },
-  "Galaxy Dropdown": {
-    "prefix": "dropdown",
+  "React Native Galaxy Dropdown": {
+    "prefix": "dropdown-app",
     "body": [
       "import React, { useState } from \"react\";",
       "import { View, Text, Pressable, FlatList } from \"react-native\";",
@@ -881,6 +877,6 @@
       "",
       "export default Dropdown;"
     ],
-    "description": "A default dropdown component with selectable options."
+    "description": "A default dropdown component with selectable options for react native."
   }
 }
