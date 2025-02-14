@@ -2245,5 +2245,34 @@
       "    </button>"
     ],
     "description": "A default button for react web (jsx only)"
+  },
+  "React Earth Button": {
+    "prefix": "button-web",
+    "body": [
+      "import React from \"react\";",
+      "import { PiAlienThin } from \"react-icons/pi\";",
+      "",
+      "const Button = () => {",
+      "  return (",
+      "    <button className=\"bg-black py-2 px-4 rounded-md flex items-center justify-center w-[200px]\">",
+      "      <span className=\"text-white text-base\">Earth Button</span>",
+      "      <PiAlienThin className=\"text-xl text-white ml-1\" />",
+      "    </button>",
+      "  );",
+      "};",
+      "",
+      "export default Button;"
+    ],
+    "description": "A button with an icon for react web"
+  },
+  "React Earth Button JsxOnly": {
+    "prefix": "button-web-jsx",
+    "body": [
+      "    <button className=\"bg-black py-2 px-4 rounded-md flex items-center justify-center w-[200px]\">",
+      "      <span className=\"text-white text-base\">Earth Button</span>",
+      "      <PiAlienThin className=\"text-xl text-white ml-1\" />",
+      "    </button>"
+    ],
+    "description": "A button with an icon for react web (jsx only)"
   }
 }
