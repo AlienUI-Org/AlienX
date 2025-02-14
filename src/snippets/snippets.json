@@ -1965,5 +1965,31 @@
       "    </div>"
     ],
     "description": "A default avatar component with profile name for react web (jsx only)."
+  },
+  "React Galaxy Badge": {
+    "prefix": "badge-web",
+    "body": [
+      "import React from \"react\";",
+      "",
+      "const Badge = () => {",
+      "  return (",
+      "    <div className=\"bg-black px-2 py-1 rounded-full flex justify-center items-center w-[80px]\">",
+      "      <p className=\"text-white text-xs\">Badge</p>",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default Badge;"
+    ],
+    "description": "A default badge component for react web"
+  },
+  "React Galaxy Badge JsxOnly": {
+    "prefix": "badge-web-jsx",
+    "body": [
+      "    <div className=\"bg-black px-2 py-1 rounded-full flex justify-center items-center w-[80px]\">",
+      "      <p className=\"text-white text-xs\">Badge</p>",
+      "    </div>"
+    ],
+    "description": "A default badge component for react web (jsx only)"
   }
 }
