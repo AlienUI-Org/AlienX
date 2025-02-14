@@ -2751,5 +2751,70 @@
       "export default Dropdown;"
     ],
     "description": "A default dropdown component with interactive options for react web."
+  },
+  "React Nebulon Input": {
+    "prefix": "input-web",
+    "body": [
+      "import React from \"react\";",
+      "",
+      "const Input = () => {",
+      "  return (",
+      "    <div>",
+      "      <input",
+      "        className=\"border border-gray-600 rounded-md p-2\"",
+      "        placeholder=\"Nebulon Input...\"",
+      "      />",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default Input;"
+    ],
+    "description": "A default input component for react web."
+  },
+  "React Nebulon Input JsxOnly": {
+    "prefix": "input-web-jsx",
+    "body": [
+      "      <input",
+      "        className=\"border border-gray-600 rounded-md p-2\"",
+      "        placeholder=\"Nebulon Input...\"",
+      "      />"
+    ],
+    "description": "A default input component for react web (jsx only)."
+  },
+  "React Earth Input": {
+    "prefix": "input-web",
+    "body": [
+      "import React from \"react\";",
+      "",
+      "const Input = () => {",
+      "  return (",
+      "    <div>",
+      "      <input",
+      "        className=\"border border-b border-b-gray-600 p-2\"",
+      "        placeholder=\"Earth Input...\"",
+      "      />",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default Input;"
+    ],
+    "description": "A input component with bottom border for react web."
+  },
+  "React Earth Input JsxOnly": {
+    "prefix": "input-web-jsx",
+    "body": [
+      "      <input",
+      "        className=\"border border-b border-b-gray-600 p-2\"",
+      "        placeholder=\"Earth Input...\"",
+      "      />"
+    ],
+    "description": "A input component with bottom border for react web (jsx only)."
+  },
+  "React Galaxy Modal": {
+    "prefix": "modal-web",
+    "body": [],
+    "description": "A modal component with open and close functionality for react web."
   }
 }
