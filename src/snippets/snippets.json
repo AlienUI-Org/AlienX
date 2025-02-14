@@ -2866,12 +2866,12 @@
     "description": "A reusable modal component with open and close functionality for react web."
   },
   "React Galaxy Pagination": {
-    "prefix": "pagination-app",
+    "prefix": "pagination-web",
     "body": [],
     "description": "A default pagination component with navigation buttons and numbered pages for react web."
   },
   "React Galaxy Pagination JsxOnly": {
-    "prefix": "pagination-app-jsx",
+    "prefix": "pagination-web-jsx",
     "body": [],
     "description": "A default pagination component with navigation buttons and numbered pages for react web (jsx only)."
   },
