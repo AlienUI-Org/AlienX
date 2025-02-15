@@ -1,71 +1,70 @@
-# AlienX README
+# AlienX – Bringing AlienUI component into your IDE👽
 
-This is the README for your extension "alienx". After writing up a brief description, we recommend including the following sections.
+**AlienX** is a powerful VS Code snippet extension crafted by the **AlienUI** team, designed to speed up your React (web) and React Native (app) development with ready-to-use UI components and utility snippets.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- 🚀 **Pre-built UI Components** – Instantly add `Button`, `Card`, `Input`, `Modal`, and more.
+- 🧩 **Supports React & React Native** – Snippets for both React components and React Native elements.
+- ⚡ **Multiple Variants** – Easily switch between component variants like `galaxy`, `earth`, and `mars`.
+- 🔄 **Fast and Flexible** – Generate full component code blocks in seconds, saving time and reducing boilerplate.
+- 🛠️ **Customizable** – Modify snippets to fit your project style with ease.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Open **VS Code**.
+2. Go to **Extensions** (or press `Ctrl+Shift+X`).
+3. Search for **AlienX**.
+4. Click **Install**.
+5. Reload VS Code if necessary.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Usage
+
+Simply type the prefix for the snippet you need, and let AlienX do the rest!
+
+### **Example Snippets:**
+
+- **`alien-button`** – Generates a Button component with multiple variants.
+- **`alien-card`** – Adds a pre-built Card component.
+- **`alien-input`** – Inserts an Input field with customizable styles.
+- **`alien-modal`** – Creates a ready-to-use Modal component.
+- **`alien-grid`** – Sets up a responsive grid layout quickly.
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+No additional configuration is required! Once installed, AlienX snippets will be available for `.js`, `.jsx`, `.ts`, and `.tsx` files out of the box.
+Just make sure your project has nativewind and tailwindcss installed for React Native and React respectively.
 
-## Extension Settings
+## Compatibility
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+- **JavaScript** / **TypeScript**
+- **React** / **React Native**
+- Works seamlessly across any project that uses `.jsx`, `.tsx`, `.js`, or `.ts`.
 
-For example:
+## Contributing
 
-This extension contributes the following settings:
+We welcome contributions from the community!
 
-- `myExtension.enable`: Enable/disable this extension.
-- `myExtension.thing`: Set to `blah` to do something.
+- **Report bugs** or suggest features via [GitHub Issues](https://github.com/khaymanii/AlienUI/issues).
 
-## Known Issues
+## License
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+This project is licensed under the **MIT License** – free to use and modify.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
+Initial release of **AlienX**
 
-### 1.0.1
+- Added support for React and React Native component snippets.
+- Included multiple variants for `Button`, `Card`, `Input` and `Modal`.
+- Seamless integration with `.js`, `.jsx`, `.ts`, and `.tsx` files.
+- Customizable and easy-to-use snippets with no additional configuration.
 
-Fixed issue #.
+## About AlienUI Team
 
-### 1.1.0
+**AlienUI Team** is a modern design and development team focused on creating developer-friendly tools and UI libraries.  
+Follow us on [Website](https://alienui.vercel.app) | [Twitter](https://x.com/alienui) [Linkedin](https://linkedin.com/company/alien-ui) | [GitHub](https://github.com/khaymanii/alienui).
 
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-- [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+_Developed with ❤️ by the AlienUI Team_
