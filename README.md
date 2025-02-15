@@ -1,4 +1,4 @@
-# AlienX – Bringing AlienUI component into your IDE👽
+# AlienX – Bringing AlienUI components into your IDE👽
 
 **AlienX** is a powerful VS Code snippet extension crafted by the **AlienUI** team, designed to speed up your React (web) and React Native (app) development with ready-to-use UI components and utility snippets.
 
@@ -21,14 +21,15 @@
 ## Usage
 
 Simply type the prefix for the snippet you need, and let AlienX do the rest!
+The table below shows the available components and their respective prefix
 
-### **Example Snippets:**
-
-- **`alien-button`** – Generates a Button component with multiple variants.
-- **`alien-card`** – Adds a pre-built Card component.
-- **`alien-input`** – Inserts an Input field with customizable styles.
-- **`alien-modal`** – Creates a ready-to-use Modal component.
-- **`alien-grid`** – Sets up a responsive grid layout quickly.
+| **Component** | **React prefix** | **React JsxOnly prefix** | **React Native prefix** | **React Native JsxOnly prefix** |
+| ------------- | ---------------- | ------------------------ | ----------------------- | ------------------------------- |
+| `Accordion`   | accordion-web    |                          | accordion-app           |                                 |
+| `Alert`       | alert-web        | alert-web-jsx            | alert-app               | alert-app-jsx                   |
+| `Avatar`      | avatar-web       | avatar-web-jsx           | avatar-app              | avatar-app-jsx                  |
+| `Badge`       | badge-web        | badge-web-jsx            | badge-app               | badge-app-jsx                   |
+| `BreadCrumbs` | breadcrumb-web   | breadcrumb-web-jsx       | breadcrumb-app          | breadcrumb-app-jsx              |
 
 ## Requirements
 
