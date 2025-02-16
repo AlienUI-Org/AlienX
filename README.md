@@ -4,7 +4,9 @@
 
 ![alienx](https://github.com/user-attachments/assets/4272642d-f5b4-467e-b1ad-42db4cadcfa6)
 
-https://www.loom.com/share/77da58a025bf495c8124485e9fae4160?sid=1032e94a-90a1-4dd0-b4be-2273dfe0f268
+https://github.com/user-attachments/assets/dc7211a6-b88d-4f93-853e-495b59bb6103
+
+
 ## Features
 
 - 🚀 **Pre-built UI Components** – Instantly add `Button`, `Card`, `Input`, `Modal`, and more.
