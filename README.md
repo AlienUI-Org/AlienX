@@ -22,10 +22,10 @@
 
 ## Usage
 
-Before usage, make sure you've read AlienUI documentation to see the available component variants. Check [AlienUI](https://alienui.vercel.app) for documentation.
+Before usage, make sure you've read AlienUI documentation to see the available component variants. All component varaints available on AlienUI are available on AlienX for both web and app. Check [AlienUI](https://alienui.vercel.app) for documentation.
 
 Simply type the prefix for the snippet you need, and let AlienX do the rest!
-The table below shows the available components and their respective prefix
+The table below shows the available components and their respective prefix.
 
 | **Component**  | **React prefix** | **React JsxOnly prefix** | **React Native prefix** | **React Native JsxOnly prefix** |
 | -------------- | ---------------- | ------------------------ | ----------------------- | ------------------------------- |
