@@ -21,6 +21,7 @@
 5. Reload VS Code if necessary.
 
 ## Usage
+Before usage, make sure you've read AlienUI documentation to see the available component variants. Check [AlienUI](https://alienui.vercel.app) for the documentation.
 
 Simply type the prefix for the snippet you need, and let AlienX do the rest!
 The table below shows the available components and their respective prefix
