@@ -6,7 +6,6 @@ Demo Tutorial Video 👇🏿
 
 https://github.com/user-attachments/assets/dc7211a6-b88d-4f93-853e-495b59bb6103
 
-
 ## Features
 
 - 🚀 **Pre-built UI Components** – Instantly add `Button`, `Card`, `Input`, `Modal`, and more.
@@ -44,6 +43,7 @@ The table below shows the available components and their respective prefix.
 | `Dropdown`     | dropdown-web     |                          | dropdown-app            |                                 |
 | `Input`        | input-web        | input-web-jsx            | input-app               | input-app-jsx                   |
 | `Modal`        | modal-web        |                          | modal-app               |                                 |
+| `Navbar`       | nav-web          |                          |                         |                                 |
 | `Pagination`   | pagination-web   | pagination-web-jsx       | pagination-app          | pagination-app-jsx              |
 | `Popover`      | popover-web      |                          | popover-app             |                                 |
 | `Progress Bar` | progress-web     | progress-web-jsx         | progress-app            | progress-app-jsx                |
