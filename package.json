@@ -1,6 +1,7 @@
 {
   "name": "alienx",
   "displayName": "alienx snippets",
+  "publisher": "AlienUI",
   "description": "A collection of AlienUI component snippet",
   "version": "0.0.1",
   "engines": {
