@@ -4,7 +4,7 @@
 
 Demo Tutorial Video 👇🏿
 
-![Demo](src/assets/alienx.gif)
+![Demo](./src/assets/alienx.gif)
 
 ## Features
 
