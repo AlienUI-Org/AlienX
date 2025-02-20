@@ -2,6 +2,7 @@
   "name": "alienx",
   "displayName": "AlienX",
   "publisher": "AlienUI",
+  "icon": "alienx.png",
   "description": "A collection of AlienUI component snippet",
   "version": "0.0.1",
   "engines": {
