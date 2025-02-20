@@ -2,8 +2,7 @@
 
 **AlienX** is a powerful VS Code snippet extension crafted by the **AlienUI** team, designed to speed up your React (web) and React Native (app) development with ready-to-use UI components and utility snippets.
 
-![alienx](https://github.com/khaymanii/AlienX/blob/main/alienx.gif?raw=true)
-
+![alienx](alienx.gif)
 
 ## Features
 
