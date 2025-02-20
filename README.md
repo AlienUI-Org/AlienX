@@ -4,9 +4,7 @@
 
 Demo Tutorial Video 👇🏿
 
-![Demo](src/assets/alienx.mp4)
-
-https://github.com/user-attachments/assets/dc7211a6-b88d-4f93-853e-495b59bb6103
+![Demo](src/assets/alienx.webp)
 
 ## Features
 
