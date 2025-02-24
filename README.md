@@ -42,6 +42,7 @@ The table below shows the available components and their respective prefix.
 | `Input`        | input-web        | input-web-jsx            | input-app               | input-app-jsx                   |
 | `Modal`        | modal-web        |                          | modal-app               |                                 |
 | `Navbar`       | nav-web          |                          |                         |                                 |
+| `Notification` | notification-web |                          | notification-app        |                                 |
 | `Pagination`   | pagination-web   | pagination-web-jsx       | pagination-app          | pagination-app-jsx              |
 | `Popover`      | popover-web      |                          | popover-app             |                                 |
 | `Progress Bar` | progress-web     | progress-web-jsx         | progress-app            | progress-app-jsx                |
