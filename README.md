@@ -27,30 +27,31 @@ Before usage, make sure you've read AlienUI documentation to see the available c
 Simply type the prefix for the snippet you need, and let AlienX do the rest!
 The table below shows the available components and their respective prefix.
 
-| **Component**  | **React prefix** | **React JsxOnly prefix** | **React Native prefix** | **React Native JsxOnly prefix** |
-| -------------- | ---------------- | ------------------------ | ----------------------- | ------------------------------- |
-| `Accordion`    | accordion-web    |                          | accordion-app           |                                 |
-| `Alert`        | alert-web        | alert-web-jsx            | alert-app               | alert-app-jsx                   |
-| `Avatar`       | avatar-web       | avatar-web-jsx           | avatar-app              | avatar-app-jsx                  |
-| `Badge`        | badge-web        | badge-web-jsx            | badge-app               | badge-app-jsx                   |
-| `BreadCrumbs`  | breadcrumb-web   | breadcrumb-web-jsx       | breadcrumb-app          | breadcrumb-app-jsx              |
-| `Button`       | button-web       | button-web-jsx           | button-app              | button-app-jsx                  |
-| `Card`         | card-web         | card-web-jsx             | card-app                | card-app-jsx                    |
-| `Carousel`     | carousel-web     |                          | carousel-app            |                                 |
-| `Checkbox`     | checkbox-web     | checkbox-web-jsx         | checkbox-app            | checkbox-app-jsx                |
-| `Dropdown`     | dropdown-web     |                          | dropdown-app            |                                 |
-| `Input`        | input-web        | input-web-jsx            | input-app               | input-app-jsx                   |
-| `Modal`        | modal-web        |                          | modal-app               |                                 |
-| `Navbar`       | nav-web          |                          |                         |                                 |
-| `Notification` | notification-web |                          | notification-app        |                                 |
-| `Pagination`   | pagination-web   | pagination-web-jsx       | pagination-app          | pagination-app-jsx              |
-| `Popover`      | popover-web      |                          | popover-app             |                                 |
-| `Progress Bar` | progress-web     | progress-web-jsx         | progress-app            | progress-app-jsx                |
-| `Spinner`      | spinner-web      | spinner-web-jsx          | spinner-app             | spinner-app-jsx                 |
-| `Switch`       | switch-web       |                          | switch-app              |                                 |
-| `Tab`          |                  |                          | tab-app                 | tab-app-jsx                     |
-| `Table`        | table-web        |                          | table-app               |                                 |
-| `Toast`        | toast-web        |                          | toast-app               |                                 |
+| **Component**  | **React prefix** | **React Native prefix** |
+| -------------- | ---------------- | ----------------------- |
+| `Accordion`    | accordion-web    | accordion-app           |
+| `Alert`        | alert-web        | alert-app               |
+| `Avatar`       | avatar-web       | avatar-app              |
+| `Badge`        | badge-web        | badge-app               |
+| `BreadCrumbs`  | breadcrumb-web   | breadcrumb-app          |
+| `Button`       | button-web       | button-app              |
+| `Card`         | card-web         | card-app                |
+| `Carousel`     | carousel-web     | carousel-app            |
+| `Checkbox`     | checkbox-web     | checkbox-app            |
+| `Dropdown`     | dropdown-web     | dropdown-app            |
+| `Input`        | input-web        | input-app               |
+| `Modal`        | modal-web        | modal-app               |
+| `Navbar`       | nav-web          |                         |
+| `Notification` | notification-web | notification-app        |
+| `Pagination`   | pagination-web   | pagination-app          |
+| `Popover`      | popover-web      | popover-app             |
+| `Progress Bar` | progress-web     | progress-app            |
+| `Search Bar`   | search-web       | search-app              |
+| `Spinner`      | spinner-web      | spinner-app             |
+| `Switch`       | switch-web       | switch-app              |
+| `Tab`          |                  | tab-app                 |
+| `Table`        | table-web        | table-app               |
+| `Toast`        | toast-web        | toast-app               |
 
 ## Requirements
 

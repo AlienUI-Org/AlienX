@@ -78,19 +78,41 @@
     "prefix": "alert-app",
     "body": [
       "import React from \"react\";",
-      "import { View, Text, TouchableOpacity } from \"react-native\";",
+      "import { View, Text } from \"react-native\";",
       "import { Feather } from \"@expo/vector-icons\";",
       "",
-      "const Alert = () => {",
+      "const Alert = ({ type, title, message }) => {",
+      "  const alertStyles = {",
+      "    success: {",
+      "      bgColor: \"bg-green-50\",",
+      "      borderColor: \"border-green-400\",",
+      "      icon: \"check-circle\",",
+      "      iconColor: \"#16a34a\"",
+      "    },",
+      "    warning: {",
+      "      bgColor: \"bg-yellow-50\",",
+      "      borderColor: \"border-yellow-400\",",
+      "      icon: \"alert-triangle\",",
+      "      iconColor: \"#ca8a04\"",
+      "    },",
+      "    failure: {",
+      "      bgColor: \"bg-red-50\",",
+      "      borderColor: \"border-red-400\",",
+      "      icon: \"x-circle\",",
+      "      iconColor: \"#dc2626\"",
+      "    }",
+      "  };",
+      "",
+      "  const { bgColor, borderColor, icon, iconColor } =",
+      "    alertStyles[type] || alertStyles.success;",
+      "",
       "  return (",
-      "    <View className=\"rounded-xl border border-gray-300 bg-green-50 p-4 w-64\">",
+      "    <View className={\\`rounded-xl border \\${borderColor} \\${bgColor} p-4 w-64\\`}>",
       "      <View className=\"flex flex-row items-start gap-4\">",
-      "        <Feather name=\"check-circle\" size={24} color=\"#16a34a\" />",
+      "        <Feather name={icon} size={24} color={iconColor} />",
       "        <View className=\"flex-1\">",
-      "          <Text className=\"text-lg font-medium text-gray-900\">Zeltron Whisper</Text>",
-      "          <Text className=\"mt-1 text-sm text-gray-700\">",
-      "            Everything is on track.",
-      "          </Text>",
+      "          <Text className=\"text-lg font-medium text-gray-900\">{title}</Text>",
+      "          <Text className=\"mt-1 text-sm text-gray-700\">{message}</Text>",
       "        </View>",
       "      </View>",
       "    </View>",
@@ -99,24 +121,7 @@
       "",
       "export default Alert;"
     ],
-    "description": "A default alert component for react native"
-  },
-  "React Native Galaxy Alert JsxOnly": {
-    "prefix": "alert-app-jsx",
-    "body": [
-      "    <View className=\"rounded-xl border border-gray-300 bg-green-50 p-4 w-64\">",
-      "      <View className=\"flex flex-row items-start gap-4\">",
-      "        <Feather name=\"check-circle\" size={24} color=\"#16a34a\" />",
-      "        <View className=\"flex-1\">",
-      "          <Text className=\"text-lg font-medium text-gray-900\">Zeltron Whisper</Text>",
-      "          <Text className=\"mt-1 text-sm text-gray-700\">",
-      "            Everything is on track.",
-      "          </Text>",
-      "        </View>",
-      "      </View>",
-      "    </View>"
-    ],
-    "description": "A default alert component for react native (jsx only)"
+    "description": "A default alert component with success, warning, and failure states, for react native"
   },
   "React Native KrytharWail Alert": {
     "prefix": "alert-app",
@@ -124,32 +129,39 @@
       "import React from \"react\";",
       "import { View, Text } from \"react-native\";",
       "",
-      "const Alert = () => {",
+      "const Alert = ({ type, title, message }) => {",
+      "  const alertStyles = {",
+      "    success: {",
+      "      bgColor: \"bg-green-50\",",
+      "      borderColor: \"border-green-400\",",
+      "      border: \"border-l-4\"",
+      "    },",
+      "    warning: {",
+      "      bgColor: \"bg-yellow-50\",",
+      "      borderColor: \"border-yellow-400\",",
+      "      border: \"border-l-4\"",
+      "    },",
+      "    failure: {",
+      "      bgColor: \"bg-red-50\",",
+      "      borderColor: \"border-red-400\",",
+      "      border: \"border-l-4\"",
+      "    }",
+      "  };",
+      "",
+      "  const { bgColor, borderColor, border } =",
+      "    alertStyles[type] || alertStyles.success;",
+      "",
       "  return (",
-      "    <View className=\"rounded-xl border-l-4 border-green-500 bg-green-50 p-4 w-64\">",
-      "      <Text className=\"text-lg font-bold\">Krythar Wail</Text>",
-      "      <Text className=\"mt-1 text-sm\">",
-      "        Everything is good.",
-      "      </Text>",
+      "    <View className={\\`rounded-xl \\${bgColor} \\${borderColor} \\${border} p-4 w-64\\`}>",
+      "      <Text className=\"text-lg font-bold\">{title}</Text>",
+      "      <Text className=\"mt-1 text-sm\">{message}</Text>",
       "    </View>",
       "  );",
       "};",
       "",
       "export default Alert;"
     ],
-    "description": "Alert component with a left green border for react native."
-  },
-  "React Native KrytharWail Alert JsxOnly": {
-    "prefix": "alert-app-jsx",
-    "body": [
-      "    <View className=\"rounded-xl border-l-4 border-green-500 bg-green-50 p-4 w-64\">",
-      "      <Text className=\"text-lg font-bold\">Krythar Wail</Text>",
-      "      <Text className=\"mt-1 text-sm\">",
-      "        Everything is good.",
-      "      </Text>",
-      "    </View>"
-    ],
-    "description": "Alert component with a left green border for react native (jsx only)"
+    "description": "Alert component with a left green border showing success, warning, and failure for react native."
   },
   "React Native Galaxy Avatar": {
     "prefix": "avatar-app",
@@ -171,18 +183,6 @@
       "export default Avatar;"
     ],
     "description": "A default avatar component for react native"
-  },
-  "React Native Galaxy Avatar JsxOnly": {
-    "prefix": "avatar-app-jsx",
-    "body": [
-      "    <View className=\"w-16 h-16 rounded-full bg-gray-200 flex justify-center items-center overflow-hidden\">",
-      "      <Image",
-      "        source={require(\"../../assets/images/alien1.avif\")}",
-      "        className=\"w-full h-full object-cover\"",
-      "      />",
-      "    </View>"
-    ],
-    "description": "A default avatar component for react native (jsx only)"
   },
   "React Native Earth Avatar": {
     "prefix": "avatar-app",
@@ -219,57 +219,31 @@
     ],
     "description": "A default avatar component with profile name for react native."
   },
-  "React Native Earth Avatar JsxOnly": {
-    "prefix": "avatar-app-jsx",
-    "body": [
-      "    <View className=\"flex-row items-center gap-2\">",
-      "       <View className=\"w-16 h-16 rounded-full bg-gray-200 flex justify-center items-center overflow-hidden\">",
-      "         <Image",
-      "           source={require(\"../../assets/images/alien1.avif\")}",
-      "           className=\"w-full h-full object-cover\"",
-      "          />",
-      "       </View>",
-      "       <View>",
-      "          <Text className=\"text-xs text-gray-700\">Good morning</Text>\"",
-      "          <Text className=\"font-semibold text-base\">",
-      "             Zyphorax",
-      "             <MaterialCommunityIcons",
-      "               name=\"alien-outline\"",
-      "               size={16}",
-      "               color=\"black\"",
-      "             />",
-      "           </Text>",
-      "        </View>",
-      "    </View>"
-    ],
-    "description": "A default avatar component with profile name for react native (jsx only)."
-  },
   "React Native Galaxy Badge": {
     "prefix": "badge-app",
     "body": [
-      "import React from 'react';",
-      "import { View, Text } from 'react-native';",
+      "import React from \"react\";",
+      "import { View, Text } from \"react-native\";",
       "",
-      "const Badge = () => {",
-      "    return (",
-      "        <View className=\"bg-black px-2 py-1 rounded-full flex items-center justify-center w-20\">",
-      "            <Text className=\"text-white text-xs\">Badge</Text>",
-      "        </View>",
-      "    );",
+      "const Badge = ({",
+      "  text = \"Badge\",",
+      "  bgColor = \"bg-black\",",
+      "  textColor = \"text-white\",",
+      "  width = \"w-20\",",
+      "  padding = \"px-2 py-1\"",
+      "}) => {",
+      "  return (",
+      "    <View",
+      "      className={\\`rounded-full flex items-center justify-center \\${bgColor} \\${width} \\${padding}\\`}",
+      "    >",
+      "      <Text className={\\`text-xs \\${textColor}\\`}>{text}</Text>",
+      "    </View>",
+      "  );",
       "};",
       "",
       "export default Badge;"
     ],
-    "description": "A default badge component for react native"
-  },
-  "React Native Galaxy Badge JsxOnly": {
-    "prefix": "badge-app-jsx",
-    "body": [
-      "        <View className=\"bg-black px-2 py-1 rounded-full flex items-center justify-center w-20\">",
-      "            <Text className=\"text-white text-xs\">Badge</Text>",
-      "        </View>"
-    ],
-    "description": "A default badge component for react native (jsx only)"
+    "description": "A default badge component with customizable text, background color, text color, width, and padding, for react native"
   },
   "React Native Galaxy Breadcrumb": {
     "prefix": "breadcrumb-app",
@@ -310,35 +284,6 @@
     ],
     "description": "A default breadcrumb navigation component with touchable links and icons for react native"
   },
-  "React Native Galaxy Breadcrumb JsxOnly": {
-    "prefix": "breadcrumb-app-jsx",
-    "body": [
-      "    <View className=\"flex flex-row items-center\">",
-      "      <TouchableOpacity>",
-      "        <Text className=\"text-gray-600 text-sm\">Home</Text>",
-      "      </TouchableOpacity>",
-      "      <Ionicons",
-      "        name=\"chevron-forward\"",
-      "        size={12}",
-      "        color=\"black\"",
-      "        className=\"mx-1 mt-[6px]\"",
-      "      />",
-      "      <TouchableOpacity>",
-      "        <Text className=\"text-gray-600 text-sm\">Nebula</Text>",
-      "      </TouchableOpacity>",
-      "      <Ionicons",
-      "        name=\"chevron-forward\"",
-      "        size={12}",
-      "        color=\"black\"",
-      "        className=\"mx-1 mt-[6px]\"",
-      "      />",
-      "      <TouchableOpacity>",
-      "        <Text className=\"text-gray-600 text-sm\">Galaxy</Text>",
-      "      </TouchableOpacity>",
-      "    </View>"
-    ],
-    "description": "A default breadcrumb navigation component with touchable links and icons for react native (jsx only)"
-  },
   "React Native Earth Breadcrumb": {
     "prefix": "breadcrumb-app",
     "body": [
@@ -378,91 +323,113 @@
     ],
     "description": "A breadcrumb navigation component for earth navigation for react native"
   },
-  "React Native Earth Breadcrumb JsxOnly": {
-    "prefix": "breadcrumb-app-jsx",
-    "body": [
-      "    <View className=\"flex flex-row items-center\">",
-      "      <TouchableOpacity>",
-      "        <Text className=\"text-gray-600 text-sm\">Home</Text>",
-      "      </TouchableOpacity>",
-      "      <MaterialCommunityIcons",
-      "        name=\"slash-forward\"",
-      "        size={12}",
-      "        color=\"black\"",
-      "        className=\"mx-1 mt-1\"",
-      "      />",
-      "      <TouchableOpacity>",
-      "        <Text className=\"text-gray-600 text-sm\">Nebula</Text>",
-      "      </TouchableOpacity>",
-      "      <MaterialCommunityIcons",
-      "        name=\"slash-forward\"",
-      "        size={12}",
-      "        color=\"black\"",
-      "        className=\"mx-1 mt-1\"",
-      "      />",
-      "      <TouchableOpacity>",
-      "        <Text className=\"text-gray-600 text-sm\">Galaxy</Text>",
-      "      </TouchableOpacity>",
-      "    </View>"
-    ],
-    "description": "A breadcrumb navigation component for earth navigation for react native (jsx only)"
-  },
   "React Native Galaxy Button": {
     "prefix": "button-app",
     "body": [
-      "import React from 'react';",
-      "import { Pressable, Text } from 'react-native';",
+      "import React from \"react\";",
+      "import { Pressable, Text } from \"react-native\";",
       "",
-      "const Button = () => {",
-      "    return (",
-      "        <Pressable className=\"bg-black py-2 px-4 rounded-md flex items-center justify-center w-52\">",
-      "            <Text className=\"text-white text-base\">Galaxy Button</Text>",
-      "        </Pressable>",
-      "    );",
+      "const Button = ({ type = \"default\", label = \"Galaxy Button\", onPress }) => {",
+      "  const buttonStyles = {",
+      "    default: {",
+      "      bgColor: \"bg-black\",",
+      "      textColor: \"text-white\",",
+      "      border: \"\"",
+      "    },",
+      "    destructive: {",
+      "      bgColor: \"bg-red-500\",",
+      "      textColor: \"text-white\",",
+      "      border: \"\"",
+      "    },",
+      "    outline: {",
+      "      bgColor: \"bg-transparent\",",
+      "      textColor: \"text-black\",",
+      "      border: \"border border-black\"",
+      "    },",
+      "    disabled: {",
+      "      bgColor: \"bg-gray-400\",",
+      "      textColor: \"text-gray-200\",",
+      "      border: \"\"",
+      "    }",
+      "  };",
+      "",
+      "  const { bgColor, textColor, border } =",
+      "    buttonStyles[type] || buttonStyles.default;",
+      "",
+      "  return (",
+      "    <Pressable",
+      "      className={\\`py-2 px-4 rounded-md flex items-center justify-center w-52 \\${bgColor} \\${border}\\`}",
+      "      onPress={type !== \"disabled\" ? onPress : null}",
+      "      disabled={type === \"disabled\"}",
+      "    >",
+      "      <Text className={\\`text-base \\${textColor}\\`}>{label}</Text>",
+      "    </Pressable>",
+      "  );",
       "};",
       "",
       "export default Button;"
     ],
-    "description": "A default button for react native"
-  },
-  "React Native Galaxy Button JsxOnly": {
-    "prefix": "button-app-jsx",
-    "body": [
-      "        <Pressable className=\"bg-black py-2 px-4 rounded-md flex items-center justify-center w-52\">",
-      "            <Text className=\"text-white text-base\">Galaxy Button</Text>",
-      "        </Pressable>"
-    ],
-    "description": "A default button for react native (jsx only)"
+    "description": "A default button  with different styles like default, destructive, outline, and disabled for react native"
   },
   "React Native Earth Button": {
     "prefix": "button-app",
     "body": [
-      "import React from 'react';",
-      "import { Pressable, Text } from 'react-native';",
-      "import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';",
+      "import React from \"react\";",
+      "import { Pressable, Text } from \"react-native\";",
+      "import MaterialCommunityIcons from \"@expo/vector-icons/MaterialCommunityIcons\";",
       "",
-      "const Button = () => {",
-      "    return (",
-      "        <Pressable className=\"bg-black border py-2 px-4 rounded-md flex flex-row items-center justify-center w-52\">",
-      "            <Text className=\"text-white text-base mr-1\">Earth Button</Text>",
-      "            <MaterialCommunityIcons name=\"alien-outline\" size={20} color=\"white\" />",
-      "        </Pressable>",
-      "    );",
+      "const Button = ({ label = \"Earth Button\", type = \"default\", icon = \"alien-outline\", iconColor, onPress }) => {",
+      "  const buttonStyles = {",
+      "    default: {",
+      "      bgColor: \"bg-black\",",
+      "      textColor: \"text-white\",",
+      "      border: \"border border-black\",",
+      "      iconColor: \"white\"",
+      "    },",
+      "    destructive: {",
+      "      bgColor: \"bg-red-500\",",
+      "      textColor: \"text-white\",",
+      "      border: \"border border-red-700\",",
+      "      iconColor: \"white\"",
+      "    },",
+      "    outline: {",
+      "      bgColor: \"bg-transparent\",",
+      "      textColor: \"text-black\",",
+      "      border: \"border border-black\",",
+      "      iconColor: \"black\"",
+      "    },",
+      "    disabled: {",
+      "      bgColor: \"bg-gray-400\",",
+      "      textColor: \"text-gray-200\",",
+      "      border: \"border border-gray-500\",",
+      "      iconColor: \"gray\"",
+      "    }",
+      "  };",
+      "",
+      "  const { bgColor, textColor, border } =",
+      "    buttonStyles[type] || buttonStyles.default;",
+      "",
+      "  return (",
+      "    <Pressable",
+      "      className={\\`py-2 px-4 rounded-md flex flex-row items-center justify-center w-52 \\${bgColor} \\${border}\\`}",
+      "      onPress={type !== \"disabled\" ? onPress : null}",
+      "      disabled={type === \"disabled\"}",
+      "    >",
+      "      <Text className={\\`text-base mr-1 \\${textColor}\\`}>{label}</Text>",
+      "      {icon && (",
+      "        <MaterialCommunityIcons",
+      "          name={icon}",
+      "          size={20}",
+      "          color={iconColor || buttonStyles[type].iconColor}",
+      "        />",
+      "      )}",
+      "    </Pressable>",
+      "  );",
       "};",
       "",
       "export default Button;"
     ],
-    "description": "A button with an icon for react native"
-  },
-  "React Native Earth Button JsxOnly": {
-    "prefix": "button-app-jsx",
-    "body": [
-      "        <Pressable className=\"bg-black border py-2 px-4 rounded-md flex flex-row items-center justify-center w-52\">",
-      "            <Text className=\"text-white text-base mr-1\">Earth Button</Text>",
-      "            <MaterialCommunityIcons name=\"alien-outline\" size={20} color=\"white\" />",
-      "        </Pressable>"
-    ],
-    "description": "A button with an icon for react native (jsx only)"
+    "description": "A button with an icon and different styles (default, destructive, outline, disabled) for react native"
   },
   "React Native Galaxy Card": {
     "prefix": "card-app",
@@ -499,33 +466,6 @@
       "export default Card;"
     ],
     "description": "A default card component featuring an alien-themed image and content for react native."
-  },
-  "React Native Galaxy Card JsxOnly": {
-    "prefix": "card-app-jsx",
-    "body": [
-      "    <View className=\"bg-white rounded-lg overflow-hidden shadow-lg m-4\">",
-      "      <Image",
-      "        source={require(\"../../assets/images/alien1.avif\")}",
-      "        className=\"w-full h-52\"",
-      "        resizeMode=\"cover\"",
-      "      />",
-      "      <View className=\"p-4\">",
-      "        <Text className=\"text-xs text-gray-500 mb-1\">07th July 1997</Text>",
-      "        <TouchableOpacity>",
-      "          <Text className=\"text-lg font-bold text-gray-900 mb-2\">",
-      "            Exploring the Unknown: The Alien Encounter Chronicles",
-      "          </Text>",
-      "        </TouchableOpacity>",
-      "        <Text className=\"text-sm text-gray-500 leading-5\">",
-      "          Deep in the vastness of space lies a story untold—of strange beings,",
-      "          otherworldly landscapes, and encounters that defy imagination.",
-      "          Discover the mysteries of alien civilizations, their technology, and",
-      "          the secrets they carry across galaxies.",
-      "        </Text>",
-      "      </View>",
-      "    </View>"
-    ],
-    "description": "A default card component featuring an alien-themed image and content for react native (jsx only)."
   },
   "React Native Earth Card": {
     "prefix": "card-app",
@@ -567,37 +507,6 @@
     ],
     "description": "A card component featuring an alien-themed image background with content overlay for react native."
   },
-  "React Native Earth Card JsxOnly": {
-    "prefix": "card-app-jsx",
-    "body": [
-      "    <View className=\"rounded-lg overflow-hidden shadow-lg w-4/5\">",
-      "      <ImageBackground",
-      "        source={require(\"../../assets/images/alien1.avif\")}",
-      "        className=\"w-full\"",
-      "        imageStyle={{ resizeMode: \"cover\" }}",
-      "        style={{ height: 350 }}",
-      "      >",
-      "        <View className=\"flex-1 bg-black/50 justify-end\">",
-      "          <View className=\"p-3\">",
-      "            <Text className=\"text-xs text-white/90\">07th July 1997</Text>",
-      "            <TouchableOpacity>",
-      "              <Text className=\"mt-1 text-lg font-bold text-white\">",
-      "                Exploring the Unknown: The Alien Encounter Chronicles",
-      "              </Text>",
-      "            </TouchableOpacity>",
-      "            <Text className=\"mt-2 text-sm leading-5 text-white/95\">",
-      "              Deep in the vastness of space lies a story untold—of strange beings,",
-      "              otherworldly landscapes, and encounters that defy imagination.",
-      "              Discover the mysteries of alien civilizations, their technology, and",
-      "              the secrets they carry across galaxies.",
-      "            </Text>",
-      "          </View>",
-      "        </View>",
-      "      </ImageBackground>",
-      "    </View>"
-    ],
-    "description": "A card component featuring an alien-themed image background with content overlay for react native (jsx only)"
-  },
   "React Native Jupiter Card": {
     "prefix": "card-app",
     "body": [
@@ -629,27 +538,6 @@
     ],
     "description": "A card component featuring an icon with text content below for react native"
   },
-  "React Native Jupiter Card JsxOnly": {
-    "prefix": "card-app-jsx",
-    "body": [
-      "    <View className=\"flex flex-col items-center bg-black p-7 shadow-md w-4/5 h-64\">",
-      "      <MaterialIcons",
-      "        name=\"join-inner\"",
-      "        size={56}",
-      "        color=\"#ffffff\"",
-      "        className=\"mb-4\"",
-      "      />",
-      "      <Text className=\"text-lg font-bold text-white text-center\">",
-      "        Open-Source Contributions",
-      "      </Text>",
-      "      <Text className=\"mt-2 text-sm text-white text-center\">",
-      "        Alien UI is open-source, inviting developers to collaborate and share",
-      "        components to improve mobile app design.",
-      "      </Text>",
-      "    </View>"
-    ],
-    "description": "A card component featuring an icon with text content below for react native (jsx only)"
-  },
   "React Native Pluto Card": {
     "prefix": "card-app",
     "body": [
@@ -673,20 +561,6 @@
       "export default Card;"
     ],
     "description": "A small card component featuring an icon with text content below for react native."
-  },
-  "React Native Pluto Card JsxOnly": {
-    "prefix": "card-app-jsx",
-    "body": [
-      "      <View className=\"w-3/5 h-44 bg-black p-6\">",
-      "        <View className=\"flex items-center justify-center w-12 h-12 bg-white rounded-full mb-6\">",
-      "          <AntDesign name=\"barschart\" size={24} color=\"#000000\" />",
-      "        </View>",
-      "        <Text className=\"text-lg text-white font-bold\">",
-      "          Bar chart showing energy usage",
-      "        </Text>",
-      "    </View>"
-    ],
-    "description": "A small card component featuring an icon with text content below for react native (jsx only)"
   },
   "React Native Mars Card": {
     "prefix": "card-app",
@@ -731,40 +605,6 @@
       "export default Card;"
     ],
     "description": "A transactional card component displaying account balance, currency selection, and action buttons for deposit and transfer for react native."
-  },
-  "React Native Mars Card JsxOnly": {
-    "prefix": "card-app-jsx",
-    "body": [
-      "    <View className=\"w-full py-8 rounded-3xl border border-black items-center bg-white\">",
-      "      <View className=\"flex-row items-center justify-between bg-black py-2 px-4 rounded-full mb-4\">",
-      "        <Image source={require(\"../../assets/icon/flag.svg\")} className=\"w-7 h-7\" />",
-      "        <Text className=\"text-white ml-2 text-base\">USD</Text>",
-      "        <MaterialIcons name=\"keyboard-arrow-down\" size={28} color=\"white\" />",
-      "      </View>",
-      "      <View className=\"flex-row items-center mb-2 space-x-2\">",
-      "        <Text className=\"text-base\">Account balance</Text>",
-      "        <Image source={require(\"../../assets/icon/eye.svg\")} className=\"w-6 h-6\" />",
-      "      </View>",
-      "      <Text className=\"text-5xl font-semibold mb-4\">",
-      "        $150,000.<Text className=\"text-4xl text-gray-500\">00</Text>",
-      "      </Text>",
-      "      <View className=\"flex-row items-center mb-4 space-x-2\">",
-      "        <Image source={require(\"../../assets/icon/copy.svg\")} className=\"w-6 h-6\" />",
-      "        <Text className=\"text-base\">0771224074</Text>",
-      "      </View>",
-      "      <View className=\"flex-row justify-center space-x-4\">",
-      "        <TouchableOpacity className=\"flex-row items-center justify-center bg-black rounded-full py-3 w-40\">",
-      "          <Text className=\"text-white text-base font-semibold mr-2\">Deposit</Text>",
-      "          <Image source={require(\"../../assets/icon/import.svg\")} className=\"w-6 h-6\" />",
-      "        </TouchableOpacity>",
-      "        <TouchableOpacity className=\"flex-row items-center justify-center bg-black rounded-full py-3 w-40\">",
-      "          <Text className=\"text-white text-base font-semibold mr-2\">Transfer</Text>",
-      "          <Image source={require(\"../../assets/icon/export.svg\")} className=\"w-6 h-6\" />",
-      "        </TouchableOpacity>",
-      "      </View>",
-      "    </View>"
-    ],
-    "description": "A transactional card component displaying account balance, currency selection, and action buttons for deposit and transfer for react native (jsx only)."
   },
   "React Native Galaxy Carousel": {
     "prefix": "carousel-app",
@@ -861,29 +701,6 @@
     ],
     "description": "A simple checkbox component with selectable options for react native."
   },
-  "React Native Galaxy Checkbox JsxOnly": {
-    "prefix": "checkbox-app-jsx",
-    "body": [
-      "    <View className=\"p-4\">",
-      "      <Text className=\"sr-only\">Checkboxes</Text>",
-      "      <View className=\"space-y-2\">",
-      "        <Pressable className=\"flex flex-row items-center gap-4 p-2 rounded bg-white\">",
-      "          <View className=\"w-5 h-5 border border-gray-300 rounded bg-white\"></View>",
-      "          <Text className=\"text-base font-medium text-gray-900\">John Clapton</Text>",
-      "        </Pressable>",
-      "        <Pressable className=\"flex flex-row items-center gap-4 p-2 rounded bg-white\">",
-      "          <View className=\"w-5 h-5 border border-gray-300 rounded bg-white\"></View>",
-      "          <Text className=\"text-base font-medium text-gray-900\">Peter Mayer</Text>",
-      "        </Pressable>",
-      "        <Pressable className=\"flex flex-row items-center gap-4 p-2 rounded bg-white\">",
-      "          <View className=\"w-5 h-5 border border-gray-300 rounded bg-white\"></View>",
-      "          <Text className=\"text-base font-medium text-gray-900\">Eric King</Text>",
-      "        </Pressable>",
-      "      </View>",
-      "    </View>"
-    ],
-    "description": "A simple checkbox component with selectable options for react native (jsx only)"
-  },
   "React Native Galaxy Dropdown": {
     "prefix": "dropdown-app",
     "body": [
@@ -958,16 +775,6 @@
     ],
     "description": "A default input component for react native."
   },
-  "React Native Nebulon Input JsxOnly": {
-    "prefix": "input-app-jsx",
-    "body": [
-      "    <TextInput",
-      "      className=\"border-1 border-black rounded-md p-2.5 w-[80%]\"",
-      "      placeholder=\"Nebulon Input...\"",
-      "    />"
-    ],
-    "description": "A default input component for react native (jsx only)."
-  },
   "React Native Earth Input": {
     "prefix": "input-app",
     "body": [
@@ -986,16 +793,6 @@
       "export default Input;"
     ],
     "description": "A input component with bottom border for react native."
-  },
-  "React Native Earth Input JsxOnly": {
-    "prefix": "input-app-jsx",
-    "body": [
-      "    <TextInput",
-      "      className=\"border-1 border-b border-b-black p-2.5 w-[80%]\"",
-      "      placeholder=\"Earth Input...\"",
-      "    />"
-    ],
-    "description": "A input component with bottom border for react native (jsx only)."
   },
   "React Native Galaxy Modal": {
     "prefix": "modal-app",
@@ -1141,32 +938,6 @@
     ],
     "description": "A default pagination component with navigation buttons and numbered pages for react native."
   },
-  "React Native Galaxy Pagination JsxOnly": {
-    "prefix": "pagination-app-jsx",
-    "body": [
-      "    <View className=\"flex-row gap-2\">",
-      "      <TouchableOpacity className=\"w-8 h-8 justify-center items-center border border-gray-300 rounded bg-white\">",
-      "        <AntDesign name=\"left\" size={10} color=\"black\" />",
-      "      </TouchableOpacity>",
-      "      <TouchableOpacity className=\"w-8 h-8 justify-center items-center border border-gray-300 rounded bg-white\">",
-      "        <Text className=\"text-gray-800 text-sm font-medium\">1</Text>",
-      "      </TouchableOpacity>",
-      "      <TouchableOpacity className=\"w-8 h-8 justify-center items-center border border-black rounded bg-black\">",
-      "        <Text className=\"text-white text-sm font-medium\">2</Text>",
-      "      </TouchableOpacity>",
-      "      <TouchableOpacity className=\"w-8 h-8 justify-center items-center border border-gray-300 rounded bg-white\">",
-      "        <Text className=\"text-gray-800 text-sm font-medium\">3</Text>",
-      "      </TouchableOpacity>",
-      "      <TouchableOpacity className=\"w-8 h-8 justify-center items-center border border-gray-300 rounded bg-white\">",
-      "        <Text className=\"text-gray-800 text-sm font-medium\">4</Text>",
-      "      </TouchableOpacity>",
-      "      <TouchableOpacity className=\"w-8 h-8 justify-center items-center border border-gray-300 rounded bg-white\">",
-      "        <AntDesign name=\"right\" size={10} color=\"black\" />",
-      "      </TouchableOpacity>",
-      "    </View>"
-    ],
-    "description": "A default pagination component with navigation buttons and numbered pages for react native (jsx only)."
-  },
   "React Native Mars Pagination": {
     "prefix": "pagination-app",
     "body": [
@@ -1193,23 +964,6 @@
       "export default Pagination;"
     ],
     "description": "A minimal pagination component with left and right navigation buttons and a page counter for react native."
-  },
-  "React Native Mars Pagination JsxOnly": {
-    "prefix": "pagination-app-jsx",
-    "body": [
-      "    <View className=\"flex-row items-center gap-3\">",
-      "      <TouchableOpacity className=\"w-8 h-8 justify-center items-center border border-gray-300 rounded bg-white\">",
-      "        <AntDesign name=\"left\" size={10} color=\"black\" />",
-      "      </TouchableOpacity>",
-      "      <Text className=\"text-xs text-gray-800\">",
-      "        1<Text className=\"mx-0.5\"> / </Text>47",
-      "      </Text>",
-      "      <TouchableOpacity className=\"w-8 h-8 justify-center items-center border border-gray-300 rounded bg-white\">",
-      "        <AntDesign name=\"right\" size={10} color=\"black\" />",
-      "      </TouchableOpacity>",
-      "    </View>"
-    ],
-    "description": "A minimal pagination component with left and right navigation buttons and a page counter for react native (jsx only)."
   },
   "React Native Galaxy Popover": {
     "prefix": "popover-app",
@@ -1291,28 +1045,6 @@
     ],
     "description": "A default progress bar component with icons representing different stages for react native."
   },
-  "React Native Galaxy Progressbar JsxOnly": {
-    "prefix": "progress-app-jsx",
-    "body": [
-      "    <View>",
-      "      <View className=\"h-2 w-[90%] bg-gray-300 rounded-lg overflow-hidden\">",
-      "        <View className=\"h-full w-1/2 bg-black\" />",
-      "      </View>",
-      "      <View className=\"flex-row justify-between mt-4\">",
-      "        <View className=\"flex-1 items-center\">",
-      "          <FontAwesome name=\"info-circle\" size={24} color=\"black\" />",
-      "        </View>",
-      "        <View className=\"flex-1 items-center\">",
-      "          <MaterialCommunityIcons name=\"map-marker\" size={24} color=\"black\" />",
-      "        </View>",
-      "        <View className=\"flex-1 items-center\">",
-      "          <AntDesign name=\"creditcard\" size={24} color=\"#A1A1AA\" />",
-      "        </View>",
-      "      </View>",
-      "    </View>"
-    ],
-    "description": "A default progress bar component with icons representing different stages for react native (jsx only)."
-  },
   "React Native Earth Progressbar": {
     "prefix": "progress-app",
     "body": [
@@ -1332,17 +1064,6 @@
       "export default ProgressBar;"
     ],
     "description": "A simple progress bar component with rounded edges for react native."
-  },
-  "React Native Earth Progressbar JsxOnly": {
-    "prefix": "progress-app-jsx",
-    "body": [
-      "    <View>",
-      "      <View className=\"mt-4 h-2 w-[90%] rounded-full bg-gray-200 overflow-hidden\">",
-      "        <View className=\"h-full w-2/3 rounded-full bg-black\"></View>",
-      "      </View>",
-      "    </View>"
-    ],
-    "description": "A simple progress bar component with rounded edges for react native (jsx only)."
   },
   "React Native Mars Progressbar": {
     "prefix": "progress-app",
@@ -1384,35 +1105,31 @@
     ],
     "description": "A progress bar component with step indicators for Details, Address, and Payment for react native."
   },
-  "React Native Mars Progressbar JsxOnly": {
-    "prefix": "progress-app-jsx",
+  "React Native Galaxy Searchbar": {
+    "prefix": "search-app",
     "body": [
-      "    <View className=\"my-5\">",
-      "      <View className=\"relative w-[90%] mt-4 h-1.5 bg-gray-200 rounded-lg\">",
-      "        <View className=\"absolute inset-0 flex flex-row justify-between -top-4\">",
-      "          <View className=\"flex-1 items-start\">",
-      "            <View className=\"w-9 h-9 p-2 rounded-full bg-black justify-center items-center mb-2\">",
-      "              <FontAwesome name=\"check-circle\" size={20} color=\"white\" />",
-      "            </View>",
-      "            <Text className=\"text-xs font-medium text-black\">Details</Text>",
-      "          </View>",
-      "          <View className=\"flex-1 items-center\">",
-      "            <View className=\"w-9 h-9 p-2 rounded-full bg-black justify-center items-center mb-2\">",
-      "              <FontAwesome name=\"check-circle\" size={20} color=\"white\" />",
-      "            </View>",
-      "            <Text className=\"text-xs font-medium text-black\">Address</Text>",
-      "          </View>",
-      "          <View className=\"flex-1 items-end\">",
-      "            <View className=\"w-9 h-9 p-2 rounded-full bg-gray-400 justify-center items-center mb-2\">",
-      "              <FontAwesome name=\"check-circle\" size={20} color=\"white\" />",
-      "            </View>",
-      "            <Text className=\"text-xs font-medium text-gray-500\">Payment</Text>",
-      "          </View>",
-      "        </View>",
+      "import { View, TextInput } from \"react-native\";",
+      "import React from \"react\";",
+      "import EvilIcons from \"@expo/vector-icons/EvilIcons\";",
+      "",
+      "const SearchBar = () => {",
+      "  return (",
+      "    <View className=\"mx-4 my-3\">",
+      "      <View className=\"flex-row items-center bg-gray-100 rounded-full px-4 py-3\">",
+      "        <EvilIcons name=\"search\" size={24} color=\"gray\" />",
+      "        <TextInput",
+      "          placeholder=\"Search the galaxy...\"",
+      "          className=\"flex-1 ml-2 text-base outline-none\"",
+      "          placeholderTextColor=\"gray\"",
+      "        />",
       "      </View>",
-      "    </View>"
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default SearchBar;"
     ],
-    "description": "A progress bar component with step indicators for Details, Address, and Payment for react native (jsx only)."
+    "description": "A default search bar component with search icon and input field for react native."
   },
   "React Native Galaxy Spinner": {
     "prefix": "spinner-app",
@@ -1431,15 +1148,6 @@
       "export default Spinner;"
     ],
     "description": "A simple default loading spinner component for react native."
-  },
-  "React Native Galaxy Spinner JsxOnly": {
-    "prefix": "spinner-app-jsx",
-    "body": [
-      "    <View className=\"flex items-center justify-center\">",
-      "      <View className=\"h-12 w-12 border-4 border-black border-t-transparent rounded-full animate-spin\" />",
-      "    </View>"
-    ],
-    "description": "A simple default loading spinner component for react native (jsx only)."
   },
   "React Native Earth Spinner": {
     "prefix": "spinner-app",
@@ -1543,31 +1251,6 @@
     ],
     "description": "A react native bottom tab navigation bar with icons."
   },
-  "React Native Galaxy Tab JsxOnly": {
-    "prefix": "tab-app-jsx",
-    "body": [
-      "    <View className=\"flex items-center\">",
-      "      <View className=\"flex-row w-11/12 items-center justify-around rounded-full bg-black py-2\">",
-      "        <View className=\"bg-white rounded-full w-12 h-12 flex items-center justify-center\">",
-      "          <AntDesign name=\"home\" size={24} color=\"#000000\" />",
-      "        </View>",
-      "        <View className=\"text-white\">",
-      "          <AntDesign name=\"contacts\" size={24} color=\"white\" />",
-      "        </View>",
-      "        <View className=\"text-white\">",
-      "          <AntDesign name=\"shoppingcart\" size={24} color=\"white\" />",
-      "        </View>",
-      "        <View className=\"text-white\">",
-      "          <AntDesign name=\"barschart\" size={24} color=\"white\" />",
-      "        </View>",
-      "        <View className=\"text-white\">",
-      "          <AntDesign name=\"setting\" size={24} color=\"white\" />",
-      "        </View>",
-      "      </View>",
-      "    </View>"
-    ],
-    "description": "A react native bottom tab navigation bar with icons (jsx only)."
-  },
   "React Native Earth Tab": {
     "prefix": "tab-app",
     "body": [
@@ -1601,31 +1284,6 @@
       "export default Tab;"
     ],
     "description": "A simple react native tab bar with text labels."
-  },
-  "React Native Earth Tab JsxOnly": {
-    "prefix": "tab-app-jsx",
-    "body": [
-      "    <View className=\"flex items-center\">",
-      "      <View className=\"flex-row w-11/12 items-center justify-around rounded bg-black py-4\">",
-      "        <View>",
-      "          <Text className=\"text-white\">Home</Text>",
-      "        </View>",
-      "        <View>",
-      "          <Text className=\"text-white\">Contact</Text>",
-      "        </View>",
-      "        <View>",
-      "          <Text className=\"text-white\">Carts</Text>",
-      "        </View>",
-      "        <View>",
-      "          <Text className=\"text-white\">Chart</Text>",
-      "        </View>",
-      "        <View>",
-      "          <Text className=\"text-white\">Settings</Text>",
-      "        </View>",
-      "      </View>",
-      "    </View>"
-    ],
-    "description": "A simple react native tab bar with text labels (jsx only)."
   },
   "React Native Galaxy Table": {
     "prefix": "table-app",
@@ -1782,6 +1440,246 @@
     ],
     "description": "A simple react native toast component with a success message and close functionality."
   },
+  "React Native Galaxy Alert (tsx)": {
+    "prefix": "alert-app",
+    "body": [
+      "import React from \"react\";",
+      "import { View, Text } from \"react-native\";",
+      "import { Feather } from \"@expo/vector-icons\";",
+      "",
+      "interface AlertProps {",
+      "  type: \"success\" | \"warning\" | \"failure\";",
+      "  title: string;",
+      "  message: string;",
+      "}",
+      "",
+      "const Alert: React.FC<AlertProps> = ({ type, title, message }) => {",
+      "  const alertStyles = {",
+      "    success: {",
+      "      bgColor: \"bg-green-50\",",
+      "      borderColor: \"border-green-400\",",
+      "      icon: \"check-circle\",",
+      "      iconColor: \"#16a34a\"",
+      "    },",
+      "    warning: {",
+      "      bgColor: \"bg-yellow-50\",",
+      "      borderColor: \"border-yellow-400\",",
+      "      icon: \"alert-triangle\",",
+      "      iconColor: \"#ca8a04\"",
+      "    },",
+      "    failure: {",
+      "      bgColor: \"bg-red-50\",",
+      "      borderColor: \"border-red-400\",",
+      "      icon: \"x-circle\",",
+      "      iconColor: \"#dc2626\"",
+      "    }",
+      "  };",
+      "",
+      "  const { bgColor, borderColor, icon, iconColor } = alertStyles[type];",
+      "",
+      "  return (",
+      "    <View className={`rounded-xl border ${borderColor} ${bgColor} p-4 w-64`}>",
+      "      <View className=\"flex flex-row items-start gap-4\">",
+      "        <Feather name={icon} size={24} color={iconColor} />",
+      "        <View className=\"flex-1\">",
+      "          <Text className=\"text-lg font-medium text-gray-900\">{title}</Text>",
+      "          <Text className=\"mt-1 text-sm text-gray-700\">{message}</Text>",
+      "        </View>",
+      "      </View>",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default Alert;"
+    ],
+    "description": "A default alert component for react native"
+  },
+  "React Native Earth Alert (tsx)": {
+    "prefix": "alert-app",
+    "body": [
+      "import React from \"react\";",
+      "import { View, Text } from \"react-native\";",
+      "",
+      "interface AlertProps {",
+      "  type?: \"success\" | \"warning\" | \"failure\";",
+      "  title: string;",
+      "  message: string;",
+      "}",
+      "",
+      "const Alert: React.FC<AlertProps> = ({ type = \"success\", title, message }) => {",
+      "  const alertStyles: Record<",
+      "    \"success\" | \"warning\" | \"failure\",",
+      "    { bgColor: string; borderColor: string; border: string }",
+      "  > = {",
+      "    success: {",
+      "      bgColor: \"bg-green-50\",",
+      "      borderColor: \"border-green-400\",",
+      "      border: \"border-l-4\"",
+      "    },",
+      "    warning: {",
+      "      bgColor: \"bg-yellow-50\",",
+      "      borderColor: \"border-yellow-400\",",
+      "      border: \"border-l-4\"",
+      "    },",
+      "    failure: {",
+      "      bgColor: \"bg-red-50\",",
+      "      borderColor: \"border-red-400\",",
+      "      border: \"border-l-4\"",
+      "    }",
+      "  };",
+      "",
+      "  const { bgColor, borderColor, border } = alertStyles[type];",
+      "",
+      "  return (",
+      "    <View className={`${bgColor} ${borderColor} ${border} rounded-xl p-4 w-64`}>",
+      "      <Text className=\"text-lg font-bold\">{title}</Text>",
+      "      <Text className=\"mt-1 text-sm\">{message}</Text>",
+      "    </View>",
+      "  );",
+      "};",
+      "",
+      "export default Alert;"
+    ],
+    "description": "A customizable Alert component with optional success, warning, or failure styles."
+  },
+  "React Native Galaxy Button (tsx)": {
+    "prefix": "button-app",
+    "body": [
+      "import React from \"react\";",
+      "import { Pressable, Text } from \"react-native\";",
+      "",
+      "interface ButtonProps {",
+      "  variant?: \"default\" | \"destructive\" | \"outline\" | \"disabled\";",
+      "  label?: string;",
+      "  onPress?: () => void;",
+      "}",
+      "",
+      "const Button: React.FC<ButtonProps> = ({",
+      "  variant = \"default\",",
+      "  label = \"Galaxy Button\",",
+      "  onPress",
+      "}) => {",
+      "  const buttonStyles = {",
+      "    default: {",
+      "      bgColor: \"bg-black\",",
+      "      textColor: \"text-white\",",
+      "      border: \"\"",
+      "    },",
+      "    destructive: {",
+      "      bgColor: \"bg-red-600\",",
+      "      textColor: \"text-white\",",
+      "      border: \"\"",
+      "    },",
+      "    outline: {",
+      "      bgColor: \"bg-transparent\",",
+      "      textColor: \"text-black\",",
+      "      border: \"border border-black\"",
+      "    },",
+      "    disabled: {",
+      "      bgColor: \"bg-gray-400\",",
+      "      textColor: \"text-gray-200\",",
+      "      border: \"\"",
+      "    }",
+      "  };",
+      "",
+      "  const { bgColor, textColor, border } =",
+      "    buttonStyles[variant] || buttonStyles.default;",
+      "",
+      "  return (",
+      "    <Pressable",
+      "      className={`py-2 px-4 rounded-md flex items-center justify-center w-52 ${bgColor} ${border}`}",
+      "      onPress={variant !== \"disabled\" ? onPress : null}",
+      "      disabled={variant === \"disabled\"}",
+      "    >",
+      "      <Text className={`text-base ${textColor}`}>{label}</Text>",
+      "    </Pressable>",
+      "  );",
+      "};",
+      "",
+      "export default Button;"
+    ],
+    "description": "A button component with different variants: default, destructive, outline, and disabled for react native"
+  },
+  "React Native Earth Button (tsx)": {
+    "prefix": "button-app",
+    "body": [
+      "import React from \"react\";",
+      "import { Pressable, Text } from \"react-native\";",
+      "import MaterialCommunityIcons from \"@expo/vector-icons/MaterialCommunityIcons\";",
+      "",
+      "type ButtonVariant = \"default\" | \"destructive\" | \"outline\" | \"disabled\";",
+      "",
+      "interface ButtonProps {",
+      "  label?: string;",
+      "  variant?: ButtonVariant;",
+      "  icon?: keyof typeof MaterialCommunityIcons.glyphMap;",
+      "  iconColor?: string;",
+      "  onPress?: () => void;",
+      "}",
+      "",
+      "const Button: React.FC<ButtonProps> = ({",
+      "  label = \"Earth Button\",",
+      "  variant = \"default\",",
+      "  icon = \"alien-outline\",",
+      "  iconColor,",
+      "  onPress",
+      "}) => {",
+      "  const buttonStyles = {",
+      "    default: {",
+      "      bgColor: \"bg-black\",",
+      "      textColor: \"text-white\",",
+      "      border: \"border border-black\",",
+      "      iconColor: \"white\"",
+      "    },",
+      "    destructive: {",
+      "      bgColor: \"bg-red-600\",",
+      "      textColor: \"text-white\",",
+      "      border: \"border border-red-700\",",
+      "      iconColor: \"white\"",
+      "    },",
+      "    outline: {",
+      "      bgColor: \"bg-transparent\",",
+      "      textColor: \"text-black\",",
+      "      border: \"border border-black\",",
+      "      iconColor: \"black\"",
+      "    },",
+      "    disabled: {",
+      "      bgColor: \"bg-gray-400\",",
+      "      textColor: \"text-gray-200\",",
+      "      border: \"border border-gray-500\",",
+      "      iconColor: \"gray\"",
+      "    }",
+      "  };",
+      "",
+      "  const {",
+      "    bgColor,",
+      "    textColor,",
+      "    border,",
+      "    iconColor: defaultIconColor",
+      "  } = buttonStyles[variant] || buttonStyles.default;",
+      "",
+      "  return (",
+      "    <Pressable",
+      "      className={`py-2 px-4 rounded-md flex flex-row items-center justify-center w-52 ${bgColor} ${border}`}",
+      "      onPress={variant !== \"disabled\" ? onPress : undefined}",
+      "      disabled={variant === \"disabled\"}",
+      "    >",
+      "      <Text className={`text-base mr-1 ${textColor}`}>{label}</Text>",
+      "      {icon && (",
+      "        <MaterialCommunityIcons",
+      "          name={icon}",
+      "          size={20}",
+      "          color={iconColor || defaultIconColor}",
+      "        />",
+      "      )}",
+      "    </Pressable>",
+      "  );",
+      "};",
+      "",
+      "export default Button;"
+    ],
+    "description": "A customizable Button component with different variants, an optional icon, and onPress functionality."
+  },
   "React Galaxy Accordion": {
     "prefix": "accordion-web",
     "body": [
@@ -1875,23 +1773,6 @@
     ],
     "description": "A default alert component for react web"
   },
-  "React Galaxy Alert JsxOnly": {
-    "prefix": "alert-web-jsx",
-    "body": [
-      "    <div className=\"rounded-xl border border-gray-300 bg-green-50 p-4 w-[250px]\">",
-      "      <div className=\"flex items-start gap-2\">",
-      "        <FaCheckCircle className=\"text-green-600 w-5 h-5\" />",
-      "        <div className=\"flex-1\">",
-      "          <strong className=\"block text-sm font-semibold text-gray-900\">",
-      "            Zeltron Whisper",
-      "          </strong>",
-      "          <p className=\"mt-1 text-xs text-gray-700\">Everything is on track</p>",
-      "        </div>",
-      "      </div>",
-      "    </div>"
-    ],
-    "description": "A default alert component for react web (jsx only)"
-  },
   "React KrytharWail Alert": {
     "prefix": "alert-web",
     "body": [
@@ -1909,16 +1790,6 @@
       "export default Alert;"
     ],
     "description": "Alert component with a left green border for react web."
-  },
-  "React KrytharWail Alert JsxOnly": {
-    "prefix": "alert-web-jsx",
-    "body": [
-      "    <div className=\"rounded-xl border-l-4 border-green-500 bg-green-50 p-4 w-[300px]\">",
-      "      <strong className=\"block text-lg font-bold\">Krythar Wail</strong>",
-      "      <p className=\"mt-1 text-sm\">Everything is good.</p>",
-      "    </div>"
-    ],
-    "description": "Alert component with a left green border for react web (jsx only)"
   },
   "React Galaxy Avatar": {
     "prefix": "avatar-web",
@@ -1942,21 +1813,6 @@
       "export default Avatar;"
     ],
     "description": "A default avatar component for react web"
-  },
-  "React Galaxy Avatar JsxOnly": {
-    "prefix": "avatar-web-jsx",
-    "body": [
-      "    <div className=\"w-16 h-16 rounded-full overflow-hidden bg-gray-200 flex justify-center items-center\">",
-      "      <img",
-      "        src=\"/images/alien1.avif\"",
-      "        alt=\"Avatar Image\"",
-      "        width={64}",
-      "        height={64}",
-      "        className=\"object-cover\"",
-      "      />",
-      "    </div>"
-    ],
-    "description": "A default avatar component for react web (jsx only)"
   },
   "React Earth Avatar": {
     "prefix": "avatar-web",
@@ -1991,30 +1847,6 @@
     ],
     "description": "A default avatar component with profile name for react web."
   },
-  "React Earth Avatar JsxOnly": {
-    "prefix": "avatar-web-jsx",
-    "body": [
-      "    <div className=\"flex items-center gap-2\">",
-      "      <div className=\"w-16 h-16 rounded-full overflow-hidden bg-gray-200 flex justify-center items-center\">",
-      "        <img",
-      "          src=\"/images/alien1.avif\"",
-      "          alt=\"Avatar Image\"",
-      "          width={64}",
-      "          height={64}",
-      "          className=\"object-cover\"",
-      "        />",
-      "      </div>",
-      "      <div>",
-      "        <p className=\"text-xs text-gray-700\">Good morning</p>",
-      "        <div className=\"flex items-center\">",
-      "          <p className=\"font-semibold text-base mr-1\">Zyphorax</p>",
-      "          <PiAlienBold />",
-      "        </div>",
-      "      </div>",
-      "    </div>"
-    ],
-    "description": "A default avatar component with profile name for react web (jsx only)."
-  },
   "React Galaxy Badge": {
     "prefix": "badge-web",
     "body": [
@@ -2031,15 +1863,6 @@
       "export default Badge;"
     ],
     "description": "A default badge component for react web"
-  },
-  "React Galaxy Badge JsxOnly": {
-    "prefix": "badge-web-jsx",
-    "body": [
-      "    <div className=\"bg-black px-2 py-1 rounded-full flex justify-center items-center w-[80px]\">",
-      "      <p className=\"text-white text-xs\">Badge</p>",
-      "    </div>"
-    ],
-    "description": "A default badge component for react web (jsx only)"
   },
   "React Galaxy Breadcrumb": {
     "prefix": "breadcrumb-web",
@@ -2099,57 +1922,6 @@
       "export default Breadcrumb;"
     ],
     "description": "A default breadcrumb navigation component with touchable links and icons for react web"
-  },
-  "React Galaxy Breadcrumb JsxOnly": {
-    "prefix": "breadcrumb-web-jsx",
-    "body": [
-      "    <nav aria-label=\"Breadcrumb\">",
-      "      <ol className=\"flex items-center gap-1 text-sm text-gray-600\">",
-      "        <li>",
-      "          <a href=\"#\" className=\"block transition hover:text-gray-700\">Home</a>",
-      "        </li>",
-      "",
-      "        <li className=\"rtl:rotate-180\">",
-      "          <svg",
-      "            xmlns=\"http://www.w3.org/2000/svg\"",
-      "            className=\"w-4 h-4\"",
-      "            viewBox=\"0 0 20 20\"",
-      "            fill=\"currentColor\"",
-      "          >",
-      "            <path",
-      "              fillRule=\"evenodd\"",
-      "              d=\"M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z\"",
-      "              clipRule=\"evenodd\"",
-      "            />",
-      "          </svg>",
-      "        </li>",
-      "",
-      "        <li>",
-      "          <a href=\"#\" className=\"block transition hover:text-gray-700\">Nebula</a>",
-      "        </li>",
-      "",
-      "        <li className=\"rtl:rotate-180\">",
-      "          <svg",
-      "            xmlns=\"http://www.w3.org/2000/svg\"",
-      "            className=\"w-4 h-4\"",
-      "            viewBox=\"0 0 20 20\"",
-      "            fill=\"currentColor\"",
-      "          >",
-      "            <path",
-      "              fillRule=\"evenodd\"",
-      "              d=\"M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z\"",
-      "              clipRule=\"evenodd\"",
-      "            />",
-      "          </svg>",
-      "        </li>",
-      "",
-      "        <li>",
-      "          <a href=\"#\" className=\"block transition hover:text-gray-700\">Galaxy</a>",
-      "        </li>",
-      "      </ol>",
-      "    </nav>"
-    ],
-    "description": "A default breadcrumb navigation component with touchable links and icons for react web (jsx only)"
   },
   "React Earth Breadcrumb": {
     "prefix": "breadcrumb-web",
@@ -2214,61 +1986,6 @@
     ],
     "description": "A breadcrumb navigation component for earth navigation for react web"
   },
-  "React Earth Breadcrumb JsxOnly": {
-    "prefix": "breadcrumb-web-jsx",
-    "body": [
-      "    <nav aria-label=\"Breadcrumb\">",
-      "      <ol className=\"flex items-center gap-1 text-sm text-gray-600\">",
-      "        <li>",
-      "          <a href=\"#\" className=\"block transition hover:text-gray-700\">Home</a>",
-      "        </li>",
-      "",
-      "        <li className=\"rtl:rotate-180\">",
-      "          <svg",
-      "            xmlns=\"http://www.w3.org/2000/svg\"",
-      "            fill=\"none\"",
-      "            viewBox=\"0 0 24 24\"",
-      "            strokeWidth=\"1.5\"",
-      "            stroke=\"currentColor\"",
-      "            className=\"w-4 h-4 text-black\"",
-      "          >",
-      "            <path",
-      "              strokeLinecap=\"round\"",
-      "              strokeLinejoin=\"round\"",
-      "              d=\"m9 20.247 6-16.5\"",
-      "            />",
-      "          </svg>",
-      "        </li>",
-      "",
-      "        <li>",
-      "          <a href=\"#\" className=\"block transition hover:text-gray-700\">Nebula</a>",
-      "        </li>",
-      "",
-      "        <li className=\"rtl:rotate-180\">",
-      "          <svg",
-      "            xmlns=\"http://www.w3.org/2000/svg\"",
-      "            fill=\"none\"",
-      "            viewBox=\"0 0 24 24\"",
-      "            strokeWidth=\"1.5\"",
-      "            stroke=\"currentColor\"",
-      "            className=\"w-4 h-4 text-black\"",
-      "          >",
-      "            <path",
-      "              strokeLinecap=\"round\"",
-      "              strokeLinejoin=\"round\"",
-      "              d=\"m9 20.247 6-16.5\"",
-      "            />",
-      "          </svg>",
-      "        </li>",
-      "",
-      "        <li>",
-      "          <a href=\"#\" className=\"block transition hover:text-gray-700\">Galaxy</a>",
-      "        </li>",
-      "      </ol>",
-      "    </nav>"
-    ],
-    "description": "A breadcrumb navigation component for earth navigation for react web (jsx only)"
-  },
   "React Galaxy Button": {
     "prefix": "button-web",
     "body": [
@@ -2285,15 +2002,6 @@
       "export default Button;"
     ],
     "description": "A default button for react web"
-  },
-  "React Galaxy Button JsxOnly": {
-    "prefix": "button-web-jsx",
-    "body": [
-      "    <button className=\"bg-black py-2 px-4 rounded-md flex items-center justify-center w-[200px]\">",
-      "      <span className=\"text-white text-base\">Galaxy Button</span>",
-      "    </button>"
-    ],
-    "description": "A default button for react web (jsx only)"
   },
   "React Earth Button": {
     "prefix": "button-web",
@@ -2313,16 +2021,6 @@
       "export default Button;"
     ],
     "description": "A button with an icon for react web"
-  },
-  "React Earth Button JsxOnly": {
-    "prefix": "button-web-jsx",
-    "body": [
-      "    <button className=\"bg-black py-2 px-4 rounded-md flex items-center justify-center w-[200px]\">",
-      "      <span className=\"text-white text-base\">Earth Button</span>",
-      "      <PiAlienThin className=\"text-xl text-white ml-1\" />",
-      "    </button>"
-    ],
-    "description": "A button with an icon for react web (jsx only)"
   },
   "React Galaxy Card": {
     "prefix": "card-web",
@@ -2365,40 +2063,6 @@
       "export default Card;"
     ],
     "description": "A default card component featuring an alien-themed image and content for react web."
-  },
-  "React Galaxy Card JsxOnly": {
-    "prefix": "card-web-jsx",
-    "body": [
-      "    <section className=\"overflow-hidden rounded-lg shadow w-[320px]\">",
-      "      <img",
-      "        alt=\"\"",
-      "        src=\"/images/alien1.avif\"",
-      "        width={100}",
-      "        height={100}",
-      "        className=\"h-56 w-full object-cover\"",
-      "      />",
-      "",
-      "      <div className=\"bg-white p-4 sm:p-6\">",
-      "        <time dateTime=\"1997-07-07\" className=\"block text-xs text-gray-500\">",
-      "          07th July 1997",
-      "        </time>",
-      "",
-      "        <a href=\"#\">",
-      "          <h3 className=\"mt-0.5 text-lg text-gray-900\">",
-      "            Exploring the Unknown: The Alien Encounter Chronicles",
-      "          </h3>",
-      "        </a>",
-      "",
-      "        <p className=\"mt-2 line-clamp-3 text-sm/relaxed text-gray-500\">",
-      "          Deep in the vastness of space lies a story untold—of strange beings,",
-      "          otherworldly landscapes, and encounters that defy imagination.",
-      "          Discover the mysteries of alien civilizations, their technology, and",
-      "          the secrets they carry across galaxies.",
-      "        </p>",
-      "      </div>",
-      "    </section>"
-    ],
-    "description": "A default card component featuring an alien-themed image and content for react web (jsx only)."
   },
   "React Earth Card": {
     "prefix": "card-web",
@@ -2444,42 +2108,6 @@
     ],
     "description": "A card component featuring an alien-themed image background with content overlay for react web."
   },
-  "React Earth Card JsxOnly": {
-    "prefix": "card-web-jsx",
-    "body": [
-      "    <section className=\"relative overflow-hidden rounded-lg shadow w-[320px]\">",
-      "      <img",
-      "        alt=\"\"",
-      "        src=\"/images/alien1.avif\"",
-      "        width={100}",
-      "        height={100}",
-      "        className=\"absolute h-full w-full object-cover\"",
-      "      />",
-      "",
-      "      <div className=\"relative pt-32 sm:pt-48 lg:pt-64\">",
-      "        <div className=\"p-4 sm:p-6\">",
-      "          <time dateTime=\"1997-07-07\" className=\"block text-xs text-white/90\">",
-      "            07th July 1997",
-      "          </time>",
-      "",
-      "          <a href=\"#\">",
-      "            <h3 className=\"mt-0.5 text-lg text-white\">",
-      "              Exploring the Unknown: The Alien Encounter Chronicles",
-      "            </h3>",
-      "          </a>",
-      "",
-      "          <p className=\"mt-2 line-clamp-3 text-sm/relaxed text-white/95\">",
-      "            Deep in the vastness of space lies a story untold—of strange beings,",
-      "            otherworldly landscapes, and encounters that defy imagination.",
-      "            Discover the mysteries of alien civilizations, their technology, and",
-      "            the secrets they carry across galaxies.",
-      "          </p>",
-      "        </div>",
-      "      </div>",
-      "    </section>"
-    ],
-    "description": "A card component featuring an alien-themed image background with content overlay for react web (jsx only)"
-  },
   "React Jupiter Card": {
     "prefix": "card-web",
     "body": [
@@ -2505,22 +2133,6 @@
     ],
     "description": "A card component featuring an icon with text content below for react web"
   },
-  "React Jupiter Card JsxOnly": {
-    "prefix": "card-web-jsx",
-    "body": [
-      "    <div className=\"flex flex-col items-center text-center bg-black p-7 shadow-md w-[300px] h-72\">",
-      "      <MdJoinInner className=\"w-14 h-14 pb-4 text-white\" />",
-      "      <h3 className=\"text-lg font-bold text-white\">",
-      "        Open-Source Contributions",
-      "      </h3>",
-      "      <p className=\"text-white mt-2 text-center\">",
-      "        Alien UI is open-source, inviting developers to collaborate and share",
-      "        components to improve mobile app design.",
-      "      </p>",
-      "    </div>"
-    ],
-    "description": "A card component featuring an icon with text content below for react web (jsx only)"
-  },
   "React Pluto Card": {
     "prefix": "card-web",
     "body": [
@@ -2541,18 +2153,6 @@
       "export default Card;"
     ],
     "description": "A small card component featuring an icon with text content below for react web."
-  },
-  "React Pluto Card JsxOnly": {
-    "prefix": "card-web-jsx",
-    "body": [
-      "      <div className=\"w-3/5 h-52 bg-black p-6\">",
-      "        <div className=\"flex items-center justify-center w-12 h-12 bg-white rounded-full mb-6\">",
-      "          <FaChartBar className=\"text-black\" size={24} />",
-      "        </div>",
-      "        <p className=\"text-lg text-white font-bold\">Bar chart showing energy usage</p>",
-      "      </div>"
-    ],
-    "description": "A small card component featuring an icon with text content below for react web (jsx only)"
   },
   "React Galaxy Carousel": {
     "prefix": "carousel-web",
@@ -2684,70 +2284,6 @@
     ],
     "description": "A simple checkbox component with selectable options for react web."
   },
-  "React Galaxy Checkbox JsxOnly": {
-    "prefix": "checkbox-web-jsx",
-    "body": [
-      "    <div>",
-      "      <fieldset>",
-      "        <legend className=\"sr-only\">Checkboxes</legend>",
-      "",
-      "        <div className=\"space-y-2\">",
-      "          <label",
-      "            htmlFor=\"Option1\"",
-      "            className=\"flex cursor-pointer items-start gap-4\"",
-      "          >",
-      "            <div className=\"flex items-center\">",
-      "              &#8203;",
-      "              <input",
-      "                type=\"checkbox\"",
-      "                className=\"size-4 rounded border-gray-300\"",
-      "                id=\"Option1\"",
-      "              />",
-      "            </div>",
-      "            <div>",
-      "              <strong className=\"font-medium text-gray-900\">John Clapton</strong>",
-      "            </div>",
-      "          </label>",
-      "",
-      "          <label",
-      "            htmlFor=\"Option2\"",
-      "            className=\"flex cursor-pointer items-start gap-4\"",
-      "          >",
-      "            <div className=\"flex items-center\">",
-      "              &#8203;",
-      "              <input",
-      "                type=\"checkbox\"",
-      "                className=\"size-4 rounded border-gray-300\"",
-      "                id=\"Option2\"",
-      "              />",
-      "            </div>",
-      "            <div>",
-      "              <strong className=\"font-medium text-gray-900\">Peter Mayer</strong>",
-      "            </div>",
-      "          </label>",
-      "",
-      "          <label",
-      "            htmlFor=\"Option3\"",
-      "            className=\"flex cursor-pointer items-start gap-4\"",
-      "          >",
-      "            <div className=\"flex items-center\">",
-      "              &#8203;",
-      "              <input",
-      "                type=\"checkbox\"",
-      "                className=\"size-4 rounded border-gray-300\"",
-      "                id=\"Option3\"",
-      "              />",
-      "            </div>",
-      "            <div>",
-      "              <strong className=\"font-medium text-gray-900\">Eric King</strong>",
-      "            </div>",
-      "          </label>",
-      "        </div>",
-      "      </fieldset>",
-      "    </div>"
-    ],
-    "description": "A simple checkbox component with selectable options for react web (jsx only)"
-  },
   "React Galaxy Dropdown": {
     "prefix": "dropdown-web",
     "body": [
@@ -2821,16 +2357,6 @@
     ],
     "description": "A default input component for react web."
   },
-  "React Nebulon Input JsxOnly": {
-    "prefix": "input-web-jsx",
-    "body": [
-      "      <input",
-      "        className=\"border border-gray-600 rounded-md p-2\"",
-      "        placeholder=\"Nebulon Input...\"",
-      "      />"
-    ],
-    "description": "A default input component for react web (jsx only)."
-  },
   "React Earth Input": {
     "prefix": "input-web",
     "body": [
@@ -2850,16 +2376,6 @@
       "export default Input;"
     ],
     "description": "A input component with bottom border for react web."
-  },
-  "React Earth Input JsxOnly": {
-    "prefix": "input-web-jsx",
-    "body": [
-      "      <input",
-      "        className=\"border border-b border-b-gray-600 p-2\"",
-      "        placeholder=\"Earth Input...\"",
-      "      />"
-    ],
-    "description": "A input component with bottom border for react web (jsx only)."
   },
   "React Galaxy Modal": {
     "prefix": "modal-web",
@@ -3140,88 +2656,6 @@
     ],
     "description": "A default pagination component with navigation buttons and numbered pages for react web."
   },
-  "React Galaxy Pagination JsxOnly": {
-    "prefix": "pagination-web-jsx",
-    "body": [
-      "    <div>",
-      "      <ol className=\"flex justify-center gap-1 text-xs font-medium\">",
-      "        <li>",
-      "          <a",
-      "            href=\"#\"",
-      "            className=\"inline-flex size-8 items-center justify-center rounded border border-gray-100 bg-white text-gray-900 rtl:rotate-180\"",
-      "          >",
-      "            <span className=\"sr-only\">Prev Page</span>",
-      "            <svg",
-      "              xmlns=\"http://www.w3.org/2000/svg\"",
-      "              className=\"size-3\"",
-      "              viewBox=\"0 0 20 20\"",
-      "              fill=\"currentColor\"",
-      "            >",
-      "              <path",
-      "                fillRule=\"evenodd\"",
-      "                d=\"M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z\"",
-      "                clipRule=\"evenodd\"",
-      "              />",
-      "            </svg>",
-      "          </a>",
-      "        </li>",
-      "",
-      "        <li>",
-      "          <a",
-      "            href=\"#\"",
-      "            className=\"block size-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900\"",
-      "          >",
-      "            1",
-      "          </a>",
-      "        </li>",
-      "",
-      "        <li className=\"block size-8 rounded border bg-black text-center leading-8 text-white\">",
-      "          2",
-      "        </li>",
-      "",
-      "        <li>",
-      "          <a",
-      "            href=\"#\"",
-      "            className=\"block size-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900\"",
-      "          >",
-      "            3",
-      "          </a>",
-      "        </li>",
-      "",
-      "        <li>",
-      "          <a",
-      "            href=\"#\"",
-      "            className=\"block size-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900\"",
-      "          >",
-      "            4",
-      "          </a>",
-      "        </li>",
-      "",
-      "        <li>",
-      "          <a",
-      "            href=\"#\"",
-      "            className=\"inline-flex size-8 items-center justify-center rounded border border-gray-100 bg-white text-gray-900 rtl:rotate-180\"",
-      "          >",
-      "            <span className=\"sr-only\">Next Page</span>",
-      "            <svg",
-      "              xmlns=\"http://www.w3.org/2000/svg\"",
-      "              className=\"size-3\"",
-      "              viewBox=\"0 0 20 20\"",
-      "              fill=\"currentColor\"",
-      "            >",
-      "              <path",
-      "                fillRule=\"evenodd\"",
-      "                d=\"M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z\"",
-      "                clipRule=\"evenodd\"",
-      "              />",
-      "            </svg>",
-      "          </a>",
-      "        </li>",
-      "      </ol>",
-      "    </div>"
-    ],
-    "description": "A default pagination component with navigation buttons and numbered pages for react web (jsx only)."
-  },
   "React Mars Pagination": {
     "prefix": "pagination-web",
     "body": [
@@ -3278,55 +2712,6 @@
       "export default Pagination;"
     ],
     "description": "A minimal pagination component with left and right navigation buttons and a page counter for react web."
-  },
-  "React Mars Pagination JsxOnly": {
-    "prefix": "pagination-web-jsx",
-    "body": [
-      "<div className=\"inline-flex items-center justify-center gap-3\">",
-      "      <a",
-      "        href=\"#\"",
-      "        className=\"inline-flex size-8 items-center justify-center rounded border border-gray-100 bg-white text-gray-900 rtl:rotate-180\"",
-      "      >",
-      "        <span className=\"sr-only\">Prev Page</span>",
-      "        <svg",
-      "          xmlns=\"http://www.w3.org/2000/svg\"",
-      "          className=\"size-3\"",
-      "          viewBox=\"0 0 20 20\"",
-      "          fill=\"currentColor\"",
-      "        >",
-      "          <path",
-      "            fillRule=\"evenodd\"",
-      "            d=\"M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z\"",
-      "            clipRule=\"evenodd\"",
-      "          />",
-      "        </svg>",
-      "      </a>",
-      "",
-      "      <p className=\"text-xs text-gray-900\">",
-      "        1<span className=\"mx-0.25\">/</span>47",
-      "      </p>",
-      "",
-      "      <a",
-      "        href=\"#\"",
-      "        className=\"inline-flex size-8 items-center justify-center rounded border border-gray-100 bg-white text-gray-900 rtl:rotate-180\"",
-      "      >",
-      "        <span className=\"sr-only\">Next Page</span>",
-      "        <svg",
-      "          xmlns=\"http://www.w3.org/2000/svg\"",
-      "          className=\"size-3\"",
-      "          viewBox=\"0 0 20 20\"",
-      "          fill=\"currentColor\"",
-      "        >",
-      "          <path",
-      "            fillRule=\"evenodd\"",
-      "            d=\"M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z\"",
-      "            clipRule=\"evenodd\"",
-      "          />",
-      "        </svg>",
-      "      </a>",
-      "    </div>"
-    ],
-    "description": "A minimal pagination component with left and right navigation buttons and a page counter for react web (jsx only)."
   },
   "React Galaxy Popover": {
     "prefix": "popover-web",
@@ -3466,79 +2851,6 @@
     ],
     "description": "A default progress bar component with icons representing different stages for react web."
   },
-  "React Galaxy Progressbar JsxOnly": {
-    "prefix": "progress-web-jsx",
-    "body": [
-      "    <div>",
-      "      <h2 className=\"sr-only\">Steps</h2>",
-      "",
-      "      <div className=\"w-[400px]\">",
-      "        <div className=\"overflow-hidden w-full rounded-full bg-gray-200\">",
-      "          <div className=\"h-2 w-1/2 rounded-full bg-black\"></div>",
-      "        </div>",
-      "",
-      "        <ol className=\"mt-4 grid grid-cols-3 text-sm font-medium text-gray-500\">",
-      "          <li className=\"flex items-center justify-start text-black sm:gap-1.5\">",
-      "            <svg",
-      "              className=\"size-6 sm:size-5\"",
-      "              xmlns=\"http://www.w3.org/2000/svg\"",
-      "              fill=\"none\"",
-      "              viewBox=\"0 0 24 24\"",
-      "              stroke=\"currentColor\"",
-      "              strokeWidth=\"2\"",
-      "            >",
-      "              <path",
-      "                strokeLinecap=\"round\"",
-      "                strokeLinejoin=\"round\"",
-      "                d=\"M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2\"",
-      "              />",
-      "            </svg>",
-      "          </li>",
-      "",
-      "          <li className=\"flex items-center justify-center text-black sm:gap-1.5\">",
-      "            <svg",
-      "              className=\"size-6 sm:size-5\"",
-      "              xmlns=\"http://www.w3.org/2000/svg\"",
-      "              fill=\"none\"",
-      "              viewBox=\"0 0 24 24\"",
-      "              stroke=\"currentColor\"",
-      "              strokeWidth=\"2\"",
-      "            >",
-      "              <path",
-      "                strokeLinecap=\"round\"",
-      "                strokeLinejoin=\"round\"",
-      "                d=\"M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z\"",
-      "              />",
-      "              <path",
-      "                strokeLinecap=\"round\"",
-      "                strokeLinejoin=\"round\"",
-      "                d=\"M15 11a3 3 0 11-6 0 3 3 0 016 0z\"",
-      "              />",
-      "            </svg>",
-      "          </li>",
-      "",
-      "          <li className=\"flex items-center justify-end sm:gap-1.5\">",
-      "            <svg",
-      "              className=\"size-6 sm:size-5\"",
-      "              xmlns=\"http://www.w3.org/2000/svg\"",
-      "              fill=\"none\"",
-      "              viewBox=\"0 0 24 24\"",
-      "              stroke=\"currentColor\"",
-      "              strokeWidth=\"2\"",
-      "            >",
-      "              <path",
-      "                strokeLinecap=\"round\"",
-      "                strokeLinejoin=\"round\"",
-      "                d=\"M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z\"",
-      "              />",
-      "            </svg>",
-      "          </li>",
-      "        </ol>",
-      "      </div>",
-      "    </div>"
-    ],
-    "description": "A default progress bar component with icons representing different stages for react web (jsx only)."
-  },
   "React Earth Progressbar": {
     "prefix": "progress-web",
     "body": [
@@ -3555,15 +2867,6 @@
       "export default ProgressBar;"
     ],
     "description": "A simple progress bar component with rounded edges for react web."
-  },
-  "React Earth Progressbar JsxOnly": {
-    "prefix": "progress-web-jsx",
-    "body": [
-      "      <div className=\"w-[400px] mt-4 h-2 overflow-hidden rounded-full bg-gray-200\">",
-      "        <div className=\"h-full w-2/3 rounded-full bg-black\"></div>",
-      "      </div>"
-    ],
-    "description": "A simple progress bar component with rounded edges for react web (jsx only)."
   },
   "React Mars Progressbar": {
     "prefix": "progress-web",
@@ -3606,37 +2909,27 @@
     ],
     "description": "A progress bar component with step indicators for Details, Address, and Payment for react web."
   },
-  "React Mars Progressbar JsxOnly": {
-    "prefix": "progress-web-jsx",
+  "React Galaxy Searchbar": {
+    "prefix": "search-web",
     "body": [
-      "    <div className=\"my-5 px-4\">",
-      "      <div className=\"relative w-[400px] mt-4 h-1.5 bg-gray-200 rounded-lg\">",
-      "        <div className=\"absolute inset-0 flex justify-between -top-4\">",
-      "          <div className=\"flex flex-col items-start flex-1\">",
-      "            <div className=\"w-9 h-9 p-2 rounded-full bg-black flex justify-center items-center mb-2\">",
-      "              <FaCheckCircle size={20} className=\"text-white\" />",
-      "            </div>",
-      "            <span className=\"text-xs font-medium text-black\">Details</span>",
-      "          </div>",
+      "import React from \"react\";",
+      "import { GoSearch } from \"react-icons/go\";",
       "",
-      "          <div className=\"flex flex-col items-center flex-1\">",
-      "            <div className=\"w-9 h-9 p-2 rounded-full bg-black flex justify-center items-center mb-2\">",
-      "              <FaCheckCircle size={20} className=\"text-white\" />",
-      "            </div>",
-      "            <span className=\"text-xs font-medium text-black\">Address</span>",
-      "          </div>",
+      "const SearchBar = () => {",
+      "  return (",
+      "    <div className=\"w-[400px] flex items-center bg-gray-100 rounded-full px-4 py-3\">",
+      "      <GoSearch size={20} color=\"gray\" />",
+      "      <input",
+      "        placeholder=\"Search the galaxy...\"",
+      "        className=\"flex-1 ml-2 text-base border-none outline-none bg-transparent \"",
+      "      />",
+      "    </div>",
+      "  );",
+      "}",
       "",
-      "          <div className=\"flex flex-col items-end flex-1\">",
-      "            <div className=\"w-9 h-9 p-2 rounded-full bg-gray-400 flex justify-center items-center mb-2\">",
-      "              <FaCheckCircle size={20} className=\"text-white\" />",
-      "            </div>",
-      "            <span className=\"text-xs font-medium text-gray-500\">Payment</span>",
-      "          </div>",
-      "        </div>",
-      "      </div>",
-      "    </div>"
+      "export default SearchBar;"
     ],
-    "description": "A progress bar component with step indicators for Details, Address, and Payment for react web (jsx only)."
+    "description": "A default search bar component with a search button for react web."
   },
   "React Galaxy Spinner": {
     "prefix": "spinner-web",
@@ -3654,15 +2947,6 @@
       "export default Spinner;"
     ],
     "description": "A simple default loading spinner component for react web."
-  },
-  "React Galaxy Spinner JsxOnly": {
-    "prefix": "spinner-web-jsx",
-    "body": [
-      "    <div className=\"flex items-center justify-center\">",
-      "      <div className=\"h-12 w-12 border-4 border-black border-t-transparent border-solid rounded-full animate-spin\"></div>",
-      "    </div>"
-    ],
-    "description": "A simple default loading spinner component for react web (jsx only)."
   },
   "React Earth Spinner": {
     "prefix": "spinner-web",
