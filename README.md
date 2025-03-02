@@ -27,6 +27,8 @@ Before usage, make sure you've read AlienUI documentation to see the available c
 Simply type the prefix for the snippet you need, and let AlienX do the rest!
 The table below shows the available components and their respective prefix.
 
+Note: All components have both Javascript and Typescript support but Some reusable components have a seperate Javascript and Typescript(tsx) version such as (Accordion, Alert, Button, Dropdown).
+
 | **Component**  | **React prefix** | **React Native prefix** |
 | -------------- | ---------------- | ----------------------- |
 | `Accordion`    | accordion-web    | accordion-app           |
