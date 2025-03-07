@@ -36,31 +36,31 @@ The table below shows the available components and their respective prefix.
 
 Note: For AlienUI library, All components have both Javascript and Typescript support but Some reusable components have a seperate Javascript and Typescript(tsx) version such as (Accordion, Alert, Button, Dropdown) for better type safety.
 
-| **Component**  | **Prefix (AlienUI react web)** | **Prefix (AlienUI react native app)** |
-| -------------- | ------------------------------ | ------------------------------------- |
-| `Accordion`    | accordion-web                  | accordion-app                         |
-| `Alert`        | alert-web                      | alert-app                             |
-| `Avatar`       | avatar-web                     | avatar-app                            |
-| `Badge`        | badge-web                      | badge-app                             |
-| `BreadCrumbs`  | breadcrumb-web                 | breadcrumb-app                        |
-| `Button`       | button-web                     | button-app                            |
-| `Card`         | card-web                       | card-app                              |
-| `Carousel`     | carousel-web                   | carousel-app                          |
-| `Checkbox`     | checkbox-web                   | checkbox-app                          |
-| `Dropdown`     | dropdown-web                   | dropdown-app                          |
-| `Input`        | input-web                      | input-app                             |
-| `Modal`        | modal-web                      | modal-app                             |
-| `Navbar`       | nav-web                        |                                       |
-| `Notification` | notification-web               | notification-app                      |
-| `Pagination`   | pagination-web                 | pagination-app                        |
-| `Popover`      | popover-web                    | popover-app                           |
-| `Progress Bar` | progress-web                   | progress-app                          |
-| `Search Bar`   | search-web                     | search-app                            |
-| `Spinner`      | spinner-web                    | spinner-app                           |
-| `Switch`       | switch-web                     | switch-app                            |
-| `Tab`          |                                | tab-app                               |
-| `Table`        | table-web                      | table-app                             |
-| `Toast`        | toast-web                      | toast-app                             |
+| **Component**  | **Prefix (AlienUI react web)** | **Prefix (AlienUI react native app)** | **Prefix ShadcnUI** |
+| -------------- | ------------------------------ | ------------------------------------- | ------------------- |
+| `Accordion`    | accordion-web                  | accordion-app                         | shad-accordion      |
+| `Alert`        | alert-web                      | alert-app                             | shad-alert          |
+| `Avatar`       | avatar-web                     | avatar-app                            | shad-avatar         |
+| `Badge`        | badge-web                      | badge-app                             | shad-badge          |
+| `BreadCrumbs`  | breadcrumb-web                 | breadcrumb-app                        | shad-breadcrumb     |
+| `Button`       | button-web                     | button-app                            | shad-btn            |
+| `Card`         | card-web                       | card-app                              | shad-card           |
+| `Carousel`     | carousel-web                   | carousel-app                          | shad-carousel       |
+| `Checkbox`     | checkbox-web                   | checkbox-app                          | shad-checkbox       |
+| `Dropdown`     | dropdown-web                   | dropdown-app                          | shad-dropdown       |
+| `Input`        | input-web                      | input-app                             | shad-input          |
+| `Modal`        | modal-web                      | modal-app                             | shad-modal          |
+| `Navbar`       | nav-web                        |                                       |                     |
+| `Notification` | notification-web               | notification-app                      |                     |
+| `Pagination`   | pagination-web                 | pagination-app                        | shad-pagination     |
+| `Popover`      | popover-web                    | popover-app                           | shad-popover        |
+| `Progress Bar` | progress-web                   | progress-app                          | shad-progress       |
+| `Search Bar`   | search-web                     | search-app                            |                     |
+| `Spinner`      | spinner-web                    | spinner-app                           | shad-spinner        |
+| `Switch`       | switch-web                     | switch-app                            | shad-switch         |
+| `Tab`          |                                | tab-app                               | shad-tab            |
+| `Table`        | table-web                      | table-app                             | shad-table          |
+| `Toast`        | toast-web                      | toast-app                             | shad-toast          |
 
 ## Compatibility
 
