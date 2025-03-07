@@ -3,7 +3,7 @@
   "displayName": "AlienX",
   "publisher": "AlienUI",
   "icon": "alienx.jpg",
-  "description": "A collection of AlienUI component snippet",
+  "description": "A collection of UI component snippet from several UI libraries",
   "version": "0.0.5",
   "engines": {
     "vscode": "^1.96.0"

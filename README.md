@@ -1,16 +1,18 @@
-# AlienX – Bringing AlienUI components into your IDE👽
+# AlienX – Bringing UI components into your IDE👽
 
-**AlienX** is a powerful VS Code snippet extension crafted by the **AlienUI** team, designed to speed up your React (web) and React Native (app) development with ready-to-use UI components and utility snippets.
+**AlienX** is a powerful VS Code snippet extension crafted by the **AlienUI** team, designed to speed up your web and app development with ready-to-use UI components and utility snippets.
 
 ![alienx](alienx.gif)
 
 ## Features
 
-- 🚀 **Pre-built UI Components** – Instantly add `Button`, `Card`, `Input`, `Modal`, and more.
-- 🧩 **Supports React & React Native** – Snippets for both React components and React Native elements.
-- ⚡ **Multiple Variants** – Easily switch between component variants like `galaxy`, `earth`, and `mars`.
-- 🔄 **Fast and Flexible** – Generate full component code blocks in seconds, saving time and reducing boilerplate.
-- 🛠️ **Customizable** – Modify snippets to fit your project style with ease.
+- 🧩 Multi-Framework Support – Generate UI snippets for AlienUI, ShadCN, Radix UI, and Chakra UI in one extension.
+- ⚡ Pre-built UI Components – Instantly add Button, Card, Input, Modal, Tooltip, and more across supported libraries.
+- 🔄 React & React Native Ready – Snippets for both web (React) and mobile (React Native) components.
+- 🎨 Multiple Styling Variants – Easily switch between themes like galaxy, earth, and mars (for AlienUI) or predefined styles from other UI libraries.
+- 🛠️ Flexible & Customizable – Modify generated snippets to match your project’s design system effortlessly.
+- ⏳ Save Time & Reduce Boilerplate – Generate full component structures in seconds for rapid development.
+- 🎛 Component Selector – Choose from AlienUI, ShadCN, Radix UI, or Chakra UI.
 
 ## Installation
 
@@ -22,48 +24,48 @@
 
 ## Usage
 
-Before usage, make sure you've read AlienUI documentation to see the available component variants. All component varaints available on AlienUI are available on AlienX for both web and app. Check [AlienUI](https://alienui.vercel.app) for documentation.
+Before usage, make sure you've read documentation for the supported UI libraries to see the available component and their variants. Check:
 
-Simply type the prefix for the snippet you need, and let AlienX do the rest!
+- [AlienUI](https://alienui.vercel.app) for AlienUI documentation.
+- [ShadcnUI](https://ui.shadcn.com/) for ShadcnUI documentation.
+- [ChakraUI](https://chakra-ui.com/) for ChakraUI documentation.
+- [RadixUI](https://www.radix-ui.com/) for RadixUI documentation.
+
+Simply type the prefix for the UI snippet you need, and let AlienX do the rest!
 The table below shows the available components and their respective prefix.
 
-Note: All components have both Javascript and Typescript support but Some reusable components have a seperate Javascript and Typescript(tsx) version such as (Accordion, Alert, Button, Dropdown).
+Note: For AlienUI library, All components have both Javascript and Typescript support but Some reusable components have a seperate Javascript and Typescript(tsx) version such as (Accordion, Alert, Button, Dropdown) for better type safety.
 
-| **Component**  | **React prefix** | **React Native prefix** |
-| -------------- | ---------------- | ----------------------- |
-| `Accordion`    | accordion-web    | accordion-app           |
-| `Alert`        | alert-web        | alert-app               |
-| `Avatar`       | avatar-web       | avatar-app              |
-| `Badge`        | badge-web        | badge-app               |
-| `BreadCrumbs`  | breadcrumb-web   | breadcrumb-app          |
-| `Button`       | button-web       | button-app              |
-| `Card`         | card-web         | card-app                |
-| `Carousel`     | carousel-web     | carousel-app            |
-| `Checkbox`     | checkbox-web     | checkbox-app            |
-| `Dropdown`     | dropdown-web     | dropdown-app            |
-| `Input`        | input-web        | input-app               |
-| `Modal`        | modal-web        | modal-app               |
-| `Navbar`       | nav-web          |                         |
-| `Notification` | notification-web | notification-app        |
-| `Pagination`   | pagination-web   | pagination-app          |
-| `Popover`      | popover-web      | popover-app             |
-| `Progress Bar` | progress-web     | progress-app            |
-| `Search Bar`   | search-web       | search-app              |
-| `Spinner`      | spinner-web      | spinner-app             |
-| `Switch`       | switch-web       | switch-app              |
-| `Tab`          |                  | tab-app                 |
-| `Table`        | table-web        | table-app               |
-| `Toast`        | toast-web        | toast-app               |
-
-## Requirements
-
-No additional configuration is required! Once installed, AlienX snippets will be available for `.js`, `.jsx`, `.ts`, and `.tsx` files out of the box.
-Just make sure your project has nativewind and tailwindcss installed for React Native and React respectively.
+| **Component**  | **Prefix (AlienUI react web)** | **Prefix (AlienUI react native app)** |
+| -------------- | ------------------------------ | ------------------------------------- |
+| `Accordion`    | accordion-web                  | accordion-app                         |
+| `Alert`        | alert-web                      | alert-app                             |
+| `Avatar`       | avatar-web                     | avatar-app                            |
+| `Badge`        | badge-web                      | badge-app                             |
+| `BreadCrumbs`  | breadcrumb-web                 | breadcrumb-app                        |
+| `Button`       | button-web                     | button-app                            |
+| `Card`         | card-web                       | card-app                              |
+| `Carousel`     | carousel-web                   | carousel-app                          |
+| `Checkbox`     | checkbox-web                   | checkbox-app                          |
+| `Dropdown`     | dropdown-web                   | dropdown-app                          |
+| `Input`        | input-web                      | input-app                             |
+| `Modal`        | modal-web                      | modal-app                             |
+| `Navbar`       | nav-web                        |                                       |
+| `Notification` | notification-web               | notification-app                      |
+| `Pagination`   | pagination-web                 | pagination-app                        |
+| `Popover`      | popover-web                    | popover-app                           |
+| `Progress Bar` | progress-web                   | progress-app                          |
+| `Search Bar`   | search-web                     | search-app                            |
+| `Spinner`      | spinner-web                    | spinner-app                           |
+| `Switch`       | switch-web                     | switch-app                            |
+| `Tab`          |                                | tab-app                               |
+| `Table`        | table-web                      | table-app                             |
+| `Toast`        | toast-web                      | toast-app                             |
 
 ## Compatibility
 
-- **JavaScript** / **TypeScript**
-- **React** / **React Native**
+- JavaScript and TypeScript
+- React and React Native
 - Works seamlessly across any project that uses `.jsx`, `.tsx`, `.js`, or `.ts`.
 
 ## Contributing
@@ -78,14 +80,22 @@ This project is licensed under the **MIT License** – free to use and modify.
 
 ## Release Notes
 
-### 1.0.0
+### AlienX 1.0.2 – Second Release
 
-Initial release of **AlienX**
+What's New?
 
-- Added support for React and React Native component snippets.
-- Included multiple variants for `Button`, `Card`, `Input` and `Modal`.
-- Seamless integration with `.js`, `.jsx`, `.ts`, and `.tsx` files.
-- Customizable and easy-to-use snippets with no additional configuration.
+The latest AlienX 1.0.2 update brings enhanced support for both web and app, along with seamless integration for popular UI libraries!
+
+- New Features & Improvements
+- Expanded Snippet Support – Generate UI components effortlessly for React & React Native projects.
+- Multiple Component Variants – Easily switch between variants for Button, Card, Input, Modal, and more.
+- Seamless File Compatibility – Works with .js, .jsx, .ts, and .tsx files out of the box.
+- Customizable & Efficient – Modify snippets to fit your project’s style with ease.
+- New UI Library Integrations – Now supports ShadCN, Chakra UI, and Radix UI components alongside AlienUI.
+
+This update makes AlienX more flexible, powerful, and adaptable for a wide range of UI needs.
+
+🔗 [Install AlienX Now](https://marketplace.visualstudio.com/items?itemName=AlienUI.alienx)
 
 ## About AlienUI Team
 
