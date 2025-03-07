@@ -49,18 +49,18 @@ Note: For AlienUI library, All components have both Javascript and Typescript su
 | `Checkbox`     | checkbox-web                   | checkbox-app                          | shad-checkbox       |
 | `Dropdown`     | dropdown-web                   | dropdown-app                          | shad-dropdown       |
 | `Input`        | input-web                      | input-app                             | shad-input          |
-| `Modal`        | modal-web                      | modal-app                             | shad-modal          |
+| `Modal`        | modal-web                      | modal-app                             |                     |
 | `Navbar`       | nav-web                        |                                       |                     |
 | `Notification` | notification-web               | notification-app                      |                     |
 | `Pagination`   | pagination-web                 | pagination-app                        | shad-pagination     |
 | `Popover`      | popover-web                    | popover-app                           | shad-popover        |
 | `Progress Bar` | progress-web                   | progress-app                          | shad-progress       |
 | `Search Bar`   | search-web                     | search-app                            |                     |
-| `Spinner`      | spinner-web                    | spinner-app                           | shad-spinner        |
+| `Spinner`      | spinner-web                    | spinner-app                           |                     |
 | `Switch`       | switch-web                     | switch-app                            | shad-switch         |
 | `Tab`          |                                | tab-app                               | shad-tab            |
 | `Table`        | table-web                      | table-app                             | shad-table          |
-| `Toast`        | toast-web                      | toast-app                             | shad-toast          |
+| `Toast`        | toast-web                      | toast-app                             |                     |
 
 ## Compatibility
 

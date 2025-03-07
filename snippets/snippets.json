@@ -3817,5 +3817,202 @@
       "}"
     ],
     "description": "ShadcnUI carousel component."
+  },
+  "Shadcn Checkbox": {
+    "prefix": "shad-checkbox",
+    "body": [
+      "import { Checkbox } from \"@/components/ui/checkbox\";",
+      "",
+      "export function CheckboxDemo() {",
+      "  return (",
+      "    <div className=\"flex items-center space-x-2\">",
+      "      <Checkbox id=\"terms\" />",
+      "      <label",
+      "        htmlFor=\"terms\"",
+      "        className=\"text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70\"",
+      "      >",
+      "        Accept terms and conditions",
+      "      </label>",
+      "    </div>",
+      "  );",
+      "}"
+    ],
+    "description": "ShadcnUI checkbox component."
+  },
+  "Shadcn Dropdown": {
+    "prefix": "shad-dropdown",
+    "body": [
+      "import {",
+      "  DropdownMenu,",
+      "  DropdownMenuContent,",
+      "  DropdownMenuItem,",
+      "  DropdownMenuLabel,",
+      "  DropdownMenuSeparator,",
+      "  DropdownMenuTrigger",
+      "} from \"@/components/ui/dropdown-menu\";",
+      "",
+      "<DropdownMenu>",
+      "  <DropdownMenuTrigger>Open</DropdownMenuTrigger>",
+      "  <DropdownMenuContent>",
+      "    <DropdownMenuLabel>My Account</DropdownMenuLabel>",
+      "    <DropdownMenuSeparator />",
+      "    <DropdownMenuItem>Profile</DropdownMenuItem>",
+      "    <DropdownMenuItem>Billing</DropdownMenuItem>",
+      "    <DropdownMenuItem>Team</DropdownMenuItem>",
+      "    <DropdownMenuItem>Subscription</DropdownMenuItem>",
+      "  </DropdownMenuContent>",
+      "</DropdownMenu>"
+    ],
+    "description": "ShadcnUI dropdown component."
+  },
+  "Shadcn Input": {
+    "prefix": "shad-input",
+    "body": [
+      "import { Input } from \"@/components/ui/input\";",
+      "",
+      "export function InputDemo() {",
+      "  return <Input type=\"email\" placeholder=\"Email\" />;",
+      "}"
+    ],
+    "description": "ShadcnUI input component."
+  },
+  "Shadcn Pagination": {
+    "prefix": "shad-pagination",
+    "body": [
+      "import {",
+      "  Pagination,",
+      "  PaginationContent,",
+      "  PaginationEllipsis,",
+      "  PaginationItem,",
+      "  PaginationLink,",
+      "  PaginationNext,",
+      "  PaginationPrevious",
+      "} from \"@/components/ui/pagination\";",
+      "",
+      "export function PaginationDemo() {",
+      "  return (",
+      "    <Pagination>",
+      "      <PaginationContent>",
+      "        <PaginationItem>",
+      "          <PaginationPrevious href=\"#\" />",
+      "        </PaginationItem>",
+      "        <PaginationItem>",
+      "          <PaginationLink href=\"#\">1</PaginationLink>",
+      "        </PaginationItem>",
+      "        <PaginationItem>",
+      "          <PaginationLink href=\"#\" isActive>",
+      "            2",
+      "          </PaginationLink>",
+      "        </PaginationItem>",
+      "        <PaginationItem>",
+      "          <PaginationLink href=\"#\">3</PaginationLink>",
+      "        </PaginationItem>",
+      "        <PaginationItem>",
+      "          <PaginationEllipsis />",
+      "        </PaginationItem>",
+      "        <PaginationItem>",
+      "          <PaginationNext href=\"#\" />",
+      "        </PaginationItem>",
+      "      </PaginationContent>",
+      "    </Pagination>",
+      "  );",
+      "}"
+    ],
+    "description": "ShadcnUI pagination component."
+  },
+  "Shadcn Popover": {
+    "prefix": "shad-popover",
+    "body": [
+      "import {",
+      "  Popover,",
+      "  PopoverContent,",
+      "  PopoverTrigger",
+      "} from \"@/components/ui/popover\";",
+      "",
+      "<Popover>",
+      "  <PopoverTrigger>Open</PopoverTrigger>",
+      "  <PopoverContent>Place content for the popover here.</PopoverContent>",
+      "</Popover>"
+    ],
+    "description": "ShadcnUI popover component."
+  },
+  "Shadcn Progress": {
+    "prefix": "shad-progress",
+    "body": [
+      "import { Progress } from \"@/components/ui/progress\";",
+      "",
+      "export function ProgressDemo() {",
+      "  return <Progress value={50} max={100} />;",
+      "}"
+    ],
+    "description": "ShadcnUI progress component."
+  },
+  "Shadcn Switch": {
+    "prefix": "shad-switch",
+    "body": [
+      "import { Label } from \"@/components/ui/label\";",
+      "import { Switch } from \"@/components/ui/switch\";",
+      "",
+      "export function SwitchDemo() {",
+      "  return (",
+      "    <div className=\"flex items-center space-x-2\">",
+      "      <Switch id=\"airplane-mode\" />",
+      "      <Label htmlFor=\"airplane-mode\">Airplane Mode</Label>",
+      "    </div>",
+      "  );",
+      "}"
+    ],
+    "description": "ShadcnUI switch component."
+  },
+  "Shadcn Tab": {
+    "prefix": "shad-tab",
+    "body": [
+      "import { Tabs, TabsContent, TabsList, TabsTrigger } from \"@/components/ui/tabs\";",
+      "",
+      "<Tabs defaultValue=\"account\" className=\"w-[400px]\">",
+      "  <TabsList>",
+      "    <TabsTrigger value=\"account\">Account</TabsTrigger>",
+      "    <TabsTrigger value=\"password\">Password</TabsTrigger>",
+      "  </TabsList>",
+      "  <TabsContent value=\"account\">Make changes to your account here.</TabsContent>",
+      "  <TabsContent value=\"password\">Change your password here.</TabsContent>",
+      "</Tabs>"
+    ],
+    "description": "ShadcnUI tab component."
+  },
+  "Shadcn Table": {
+    "prefix": "shad-table",
+    "body": [
+      "import {",
+      "  Table,",
+      "  TableBody,",
+      "  TableCaption,",
+      "  TableCell,",
+      "  TableHead,",
+      "  TableHeader,",
+      "  TableRow",
+      "} from \"@/components/ui/table\";",
+      "",
+      "<Table>",
+      "  <TableCaption>A list of your recent invoices.</TableCaption>",
+      "  <TableHeader>",
+      "    <TableRow>",
+      "      <TableHead className=\"w-[100px]\">Invoice</TableHead>",
+      "      <TableHead>Status</TableHead>",
+      "      <TableHead>Method</TableHead>",
+      "      <TableHead className=\"text-right\">Amount</TableHead>",
+      "    </TableRow>",
+      "  </TableHeader>",
+      "  <TableBody>",
+      "    <TableRow>",
+      "      <TableCell className=\"font-medium\">INV001</TableCell>",
+      "      <TableCell>Paid</TableCell>",
+      "      <TableCell>Credit Card</TableCell>",
+      "      <TableCell className=\"text-right\">$250.00</TableCell>",
+      "    </TableRow>",
+      "  </TableBody>",
+      "</Table>"
+    ],
+    "description": "ShadcnUI table component."
   }
 }
