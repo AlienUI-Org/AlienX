@@ -6,13 +6,13 @@
 
 ## Features
 
-- 🧩 Multi-Framework Support – Generate UI snippets for AlienUI, ShadCN, Radix UI, and Chakra UI in one extension.
-- ⚡ Pre-built UI Components – Instantly add Button, Card, Input, Modal, Tooltip, and more across supported libraries.
-- 🔄 React & React Native Ready – Snippets for both web (React) and mobile (React Native) components.
+- 🧩 Multi-Framework Support – Generate UI snippets for Alien UI, Shadcn UI, and Chakra UI in one extension.
+- ⚡ Pre-built UI Components – Instantly add Button, Card, Input, Popover, Table, and more across supported libraries.
+- 🔄 Web & Mobile Ready – Snippets for both web and mobile (React Native) components.
 - 🎨 Multiple Styling Variants – Easily switch between themes like galaxy, earth, and mars (for AlienUI) or predefined styles from other UI libraries.
 - 🛠️ Flexible & Customizable – Modify generated snippets to match your project’s design system effortlessly.
 - ⏳ Save Time & Reduce Boilerplate – Generate full component structures in seconds for rapid development.
-- 🎛 Component Selector – Choose from AlienUI, ShadCN, Radix UI, or Chakra UI.
+- 🎛 Component Selector – Choose from Alien UI, Shadcn UI, or Chakra UI.
 
 ## Installation
 
@@ -29,43 +29,43 @@ Before usage, make sure you've read documentation for the supported UI libraries
 - [AlienUI](https://alienui.vercel.app) for AlienUI documentation.
 - [ShadcnUI](https://ui.shadcn.com/) for ShadcnUI documentation.
 - [ChakraUI](https://chakra-ui.com/) for ChakraUI documentation.
-- [RadixUI](https://www.radix-ui.com/) for RadixUI documentation.
 
-Simply type the prefix for the UI snippet you need, and let AlienX do the rest!
+Create a `.tsx` or `.jsx` file in your project folder and Simply type the prefix for the UI snippet you need, and let AlienX do the rest!
+
 The table below shows the available components and their respective prefix.
 
-Note: For AlienUI library, All components have both Javascript and Typescript support but Some reusable components have a seperate Javascript and Typescript(tsx) version such as (Accordion, Alert, Button, Dropdown) for better type safety.
+Note: For AlienUI component library, All components have both Javascript and Typescript support but Some reusable components have a seperate Javascript and Typescript(tsx) version such as (Accordion, Alert, Button, Dropdown) for better type safety.
 
-| **Component**  | **Prefix (AlienUI react web)** | **Prefix (AlienUI react native app)** | **Prefix ShadcnUI** |
-| -------------- | ------------------------------ | ------------------------------------- | ------------------- |
-| `Accordion`    | accordion-web                  | accordion-app                         | shad-accordion      |
-| `Alert`        | alert-web                      | alert-app                             | shad-alert          |
-| `Avatar`       | avatar-web                     | avatar-app                            | shad-avatar         |
-| `Badge`        | badge-web                      | badge-app                             | shad-badge          |
-| `BreadCrumbs`  | breadcrumb-web                 | breadcrumb-app                        | shad-breadcrumb     |
-| `Button`       | button-web                     | button-app                            | shad-btn            |
-| `Card`         | card-web                       | card-app                              | shad-card           |
-| `Carousel`     | carousel-web                   | carousel-app                          | shad-carousel       |
-| `Checkbox`     | checkbox-web                   | checkbox-app                          | shad-checkbox       |
-| `Dropdown`     | dropdown-web                   | dropdown-app                          | shad-dropdown       |
-| `Input`        | input-web                      | input-app                             | shad-input          |
-| `Modal`        | modal-web                      | modal-app                             |                     |
-| `Navbar`       | nav-web                        |                                       |                     |
-| `Notification` | notification-web               | notification-app                      |                     |
-| `Pagination`   | pagination-web                 | pagination-app                        | shad-pagination     |
-| `Popover`      | popover-web                    | popover-app                           | shad-popover        |
-| `Progress Bar` | progress-web                   | progress-app                          | shad-progress       |
-| `Search Bar`   | search-web                     | search-app                            |                     |
-| `Spinner`      | spinner-web                    | spinner-app                           |                     |
-| `Switch`       | switch-web                     | switch-app                            | shad-switch         |
-| `Tab`          |                                | tab-app                               | shad-tab            |
-| `Table`        | table-web                      | table-app                             | shad-table          |
-| `Toast`        | toast-web                      | toast-app                             |                     |
+| **Component**  | **Prefix (AlienUI react web)** | **Prefix (AlienUI react native app)** | **Prefix ShadcnUI** | **Prefix ChakraUI** |
+| -------------- | ------------------------------ | ------------------------------------- | ------------------- | ------------------- |
+| `Accordion`    | accordion-web                  | accordion-app                         | shad-accordion      | chak-accordion      |
+| `Alert`        | alert-web                      | alert-app                             | shad-alert          | chak-alert          |
+| `Avatar`       | avatar-web                     | avatar-app                            | shad-avatar         | chak-avatar         |
+| `Badge`        | badge-web                      | badge-app                             | shad-badge          | chak-badge          |
+| `BreadCrumbs`  | breadcrumb-web                 | breadcrumb-app                        | shad-breadcrumb     | chak-breadcrumb     |
+| `Button`       | button-web                     | button-app                            | shad-btn            | chak-btn            |
+| `Card`         | card-web                       | card-app                              | shad-card           | chak-card           |
+| `Carousel`     | carousel-web                   | carousel-app                          | shad-carousel       |                     |
+| `Checkbox`     | checkbox-web                   | checkbox-app                          | shad-checkbox       | chak-checkbox       |
+| `Dropdown`     | dropdown-web                   | dropdown-app                          | shad-dropdown       | chak-dropdown       |
+| `Input`        | input-web                      | input-app                             | shad-input          | chak-input          |
+| `Modal`        | modal-web                      | modal-app                             |                     |                     |
+| `Navbar`       | nav-web                        |                                       |                     |                     |
+| `Notification` | notification-web               | notification-app                      |                     |                     |
+| `Pagination`   | pagination-web                 | pagination-app                        | shad-pagination     | chak-pagination     |
+| `Popover`      | popover-web                    | popover-app                           | shad-popover        | chak-popover        |
+| `Progress Bar` | progress-web                   | progress-app                          | shad-progress       | chak-progress       |
+| `Search Bar`   | search-web                     | search-app                            |                     |                     |
+| `Spinner`      | spinner-web                    | spinner-app                           |                     | chak-spinner        |
+| `Switch`       | switch-web                     | switch-app                            | shad-switch         | chak-switch         |
+| `Tab`          |                                | tab-app                               | shad-tab            | chak-tab            |
+| `Table`        | table-web                      | table-app                             | shad-table          | chak-table          |
+| `Toast`        | toast-web                      | toast-app                             |                     |                     |
 
 ## Compatibility
 
 - JavaScript and TypeScript
-- React and React Native
+- React, Nextjs and React Native etc.
 - Works seamlessly across any project that uses `.jsx`, `.tsx`, `.js`, or `.ts`.
 
 ## Contributing
