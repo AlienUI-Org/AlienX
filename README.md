@@ -28,8 +28,8 @@ Before usage, make sure you've read documentation for the supported UI libraries
 
 - [AlienUI](https://alienui.vercel.app) for AlienUI React Native documentation.
 - [AlienUI-React](https://alienui-react.vercel.app) for AlienUI React documentation.
-- [MaterialUI](https://mui.com/) for MaterialUI documentation.
-- [DaisyUI](https://daisyui.com/) for DaisyUI documentation.
+- [MaterialUI](https://mui.com/material-ui) for MaterialUI documentation.
+- [DaisyUI](https://daisyui.com) for DaisyUI documentation.
 
 Create a `.tsx` or `.jsx` file in your project folder and Simply type the prefix for the UI snippet you need, and let AlienX do the rest!
 
