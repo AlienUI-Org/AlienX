@@ -39,18 +39,18 @@ The table below shows the available components and their respective prefix.
 
 | **Component**  | **Prefix (AlienUI React)** | **Prefix (AlienUI React Native)** | **Prefix MaterialUI** | **Prefix DaisyUI** |
 | -------------- | -------------------------- | --------------------------------- | --------------------- | ------------------ |
-| `Accordion`    | accordion-web              | accordion-app                     |                       | dai-accordion      |
+| `Accordion`    | accordion-web              | accordion-app                     | mui-accordion         | dai-accordion      |
 | `Alert`        | alert-web                  | alert-app                         | mui-alert             | dai-alert          |
 | `Avatar`       | avatar-web                 | avatar-app                        | mui-avatar            | dai-avatar         |
 | `Badge`        | badge-web                  | badge-app                         | mui-badge             | dai-badge          |
 | `BreadCrumbs`  | breadcrumb-web             | breadcrumb-app                    | mui-breadcrumb        | dai-breadcrumb     |
 | `Button`       | button-web                 | button-app                        | mui-btn               | dai-btn            |
 | `Card`         | card-web                   | card-app                          | mui-card              | dai-card           |
-| `Carousel`     | carousel-web               | carousel-app                      | mui-carousel          |                    |
+| `Carousel`     | carousel-web               | carousel-app                      |                       |                    |
 | `Checkbox`     | checkbox-web               | checkbox-app                      | mui-checkbox          | dai-checkbox       |
 | `Dropdown`     | dropdown-web               | dropdown-app                      | mui-dropdown          | dai-dropdown       |
 | `Input`        | input-web                  | input-app                         | mui-input             | dai-input          |
-| `Modal`        | modal-web                  | modal-app                         |                       |                    |
+| `Modal`        | modal-web                  | modal-app                         | mui-modal             |                    |
 | `Navbar`       | nav-web                    |                                   |                       |                    |
 | `Notification` | notification-web           | notification-app                  |                       |                    |
 | `Pagination`   | pagination-web             | pagination-app                    | mui-pagination        | dai-pagination     |
