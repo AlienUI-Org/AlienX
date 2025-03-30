@@ -50,7 +50,7 @@ The table below shows the available components and their respective prefix.
 | `Checkbox`     | checkbox-web               | checkbox-app                      | mui-checkbox          | dai-checkbox       |
 | `Dropdown`     | dropdown-web               | dropdown-app                      | mui-dropdown          | dai-dropdown       |
 | `Input`        | input-web                  | input-app                         | mui-input             | dai-input          |
-| `Modal`        | modal-web                  | modal-app                         | mui-modal             |                    |
+| `Modal`        | modal-web                  | modal-app                         | mui-modal             | dai-modal          |
 | `Navbar`       | nav-web                    |                                   |                       |                    |
 | `Notification` | notification-web           | notification-app                  |                       |                    |
 | `Pagination`   | pagination-web             | pagination-app                    | mui-pagination        | dai-pagination     |
