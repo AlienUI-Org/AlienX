@@ -6051,7 +6051,7 @@
       "  );",
       "}"
     ],
-    "description": "MUI Basic Input component with different variants and color, error, fullwidth and multiline prop."
+    "description": "MUI Basic Input component with different variants, type and color, error, required, fullwidth and multiline prop."
   },
   "MUI Input with icon": {
     "prefix": "mui-input",
