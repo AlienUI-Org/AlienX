@@ -39,7 +39,7 @@ The table below shows the available components and their respective prefix.
 
 | **Component**  | **Prefix (AlienUI React)** | **Prefix (AlienUI React Native)** | **Prefix MaterialUI** | **Prefix DaisyUI** |
 | -------------- | -------------------------- | --------------------------------- | --------------------- | ------------------ |
-| `Accordion`    | accordion-web              | accordion-app                     | mui-accordion         | dai-accordion      |
+| `Accordion`    | accordion-web              | accordion-app                     |                       | dai-accordion      |
 | `Alert`        | alert-web                  | alert-app                         | mui-alert             | dai-alert          |
 | `Avatar`       | avatar-web                 | avatar-app                        | mui-avatar            | dai-avatar         |
 | `Badge`        | badge-web                  | badge-app                         | mui-badge             | dai-badge          |
