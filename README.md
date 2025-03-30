@@ -57,7 +57,7 @@ The table below shows the available components and their respective prefix.
 | `Popover`      | popover-web                | popover-app                       | mui-popover           | dai-popover        |
 | `Progress Bar` | progress-web               | progress-app                      | mui-progress          | dai-progress       |
 | `Search Bar`   | search-web                 | search-app                        |                       |                    |
-| `Spinner`      | spinner-web                | spinner-app                       |                       | dai-spinner        |
+| `Spinner`      | spinner-web                | spinner-app                       | mui-spinner           | dai-spinner        |
 | `Switch`       | switch-web                 | switch-app                        | mui-switch            | dai-switch         |
 | `Tab`          |                            | tab-app                           | mui-tab               | dai-tab            |
 | `Table`        | table-web                  | table-app                         | mui-table             | dai-table          |

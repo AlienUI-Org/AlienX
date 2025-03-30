@@ -6347,5 +6347,89 @@
       "}"
     ],
     "description": "MUI Popover component with an interactive button trigger (tsx version)."
+  },
+  "MUI Progressbar": {
+    "prefix": "mui-progress",
+    "body": [
+      "import * as React from 'react';",
+      "import Stack from '@mui/material/Stack';",
+      "import LinearProgress from '@mui/material/LinearProgress';",
+      "",
+      "export default function LinearColor() {",
+      "  return (",
+      "    <Stack sx={{ width: '100%', color: 'grey.500' }} spacing={2}>",
+      "      <LinearProgress />",
+      "      <LinearProgress color=\"secondary\" />",
+      "      <LinearProgress color=\"success\" />",
+      "      <LinearProgress color=\"inherit\" />",
+      "    </Stack>",
+      "  );",
+      "}"
+    ],
+    "description": "MUI Linear Progress component with different colors."
+  },
+  "MUI Spinner": {
+    "prefix": "mui-spinner",
+    "body": [
+      "import * as React from 'react';",
+      "import Stack from '@mui/material/Stack';",
+      "import CircularProgress from '@mui/material/CircularProgress';",
+      "",
+      "export default function CircularColor() {",
+      "  return (",
+      "    <Stack sx={{ color: 'grey.500' }} spacing={2} direction=\"row\">",
+      "      <CircularProgress  />",
+      "      <CircularProgress color=\"secondary\" size=\"30px\" />",
+      "      <CircularProgress color=\"success\" size={40}  />",
+      "      <CircularProgress color=\"inherit\" size=\"3rem\"  />",
+      "    </Stack>",
+      "  );",
+      "}"
+    ],
+    "description": "MUI Spinner component with different colors and sizes."
+  },
+  "MUI Basic Switch": {
+    "prefix": "mui-switch",
+    "body": [
+      "import * as React from 'react';",
+      "import Switch from '@mui/material/Switch';",
+      "",
+      "const label = { inputProps: { 'aria-label': 'Switch demo' } };",
+      "",
+      "export default function BasicSwitches() {",
+      "  return (",
+      "    <div>",
+      "      <Switch {...label} defaultChecked size=\"small\" />",
+      "      <Switch {...label} defaultChecked />",
+      "      <Switch {...label} defaultChecked color=\"secondary\" size=\"small\" />",
+      "      <Switch {...label} defaultChecked color=\"warning\" />",
+      "      <Switch {...label} />",
+      "      <Switch {...label} disabled defaultChecked />",
+      "      <Switch {...label} disabled />",
+      "    </div>",
+      "  );",
+      "}"
+    ],
+    "description": "MUI Switch component with different states."
+  },
+  "MUI Label Switch": {
+    "prefix": "mui-switch",
+    "body": [
+      "import * as React from 'react';",
+      "import FormGroup from '@mui/material/FormGroup';",
+      "import FormControlLabel from '@mui/material/FormControlLabel';",
+      "import Switch from '@mui/material/Switch';",
+      "",
+      "export default function SwitchLabels() {",
+      "  return (",
+      "    <FormGroup>",
+      "      <FormControlLabel control={<Switch defaultChecked />} label=\"Label\" />",
+      "      <FormControlLabel required control={<Switch />} label=\"Required\" />",
+      "      <FormControlLabel disabled control={<Switch />} label=\"Disabled\" />",
+      "    </FormGroup>",
+      "  );",
+      "}"
+    ],
+    "description": "MUI Switch component with labels and different states."
   }
 }
