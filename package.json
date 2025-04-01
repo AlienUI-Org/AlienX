@@ -8,23 +8,20 @@
   "engines": {
     "vscode": "^1.96.0"
   },
-  "funding": [
-    {
-      "type": "github",
-      "url": "https://github.com/sponsors/khaymanii"
-    },
-    {
-      "type": "buymeacoffee",
-      "url": "https://buymeacoffee.com/alienui"
-    }
-  ],
+  "sponsor": {
+    "url": "https://github.com/sponsors/khaymanii"
+  },
   "categories": [
     "Other",
     "Snippets"
   ],
+  "bugs": {
+    "url": "https://github.com/AlienUI-Org/Alienx/issues",
+    "email": "alienuiteam@gmail.com"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/khaymanii/alienui"
+    "url": "https://github.com/AlienUI-Org/Alienx"
   },
   "activationEvents": [
     "onLanguage:javascript",
