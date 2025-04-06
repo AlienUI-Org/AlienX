@@ -46,7 +46,7 @@ The table below shows the available components and their respective prefix.
 | `BreadCrumbs`  | breadcrumb-web             | breadcrumb-app                    | mui-breadcrumb        | dai-breadcrumb     |
 | `Button`       | button-web                 | button-app                        | mui-btn               | dai-btn            |
 | `Card`         | card-web                   | card-app                          | mui-card              | dai-card           |
-| `Carousel`     | carousel-web               | carousel-app                      |                       |                    |
+| `Carousel`     | carousel-web               | carousel-app                      |                       | dai-carousel       |
 | `Checkbox`     | checkbox-web               | checkbox-app                      | mui-checkbox          | dai-checkbox       |
 | `Dropdown`     | dropdown-web               | dropdown-app                      | mui-dropdown          | dai-dropdown       |
 | `Input`        | input-web                  | input-app                         | mui-input             | dai-input          |
