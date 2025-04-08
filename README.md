@@ -51,10 +51,10 @@ The table below shows the available components and their respective prefix.
 | `Dropdown`     | dropdown-web               | dropdown-app                      | mui-dropdown          | dai-dropdown       |
 | `Input`        | input-web                  | input-app                         | mui-input             | dai-input          |
 | `Modal`        | modal-web                  | modal-app                         | mui-modal             | dai-modal          |
-| `Navbar`       | nav-web                    |                                   |                       |                    |
+| `Navbar`       | nav-web                    |                                   |                       | dai-nav            |
 | `Notification` | notification-web           | notification-app                  |                       |                    |
 | `Pagination`   | pagination-web             | pagination-app                    | mui-pagination        | dai-pagination     |
-| `Popover`      | popover-web                | popover-app                       | mui-popover           | dai-popover        |
+| `Popover`      | popover-web                | popover-app                       | mui-popover           |                    |
 | `Progress Bar` | progress-web               | progress-app                      | mui-progress          | dai-progress       |
 | `Search Bar`   | search-web                 | search-app                        |                       |                    |
 | `Spinner`      | spinner-web                | spinner-app                       | mui-spinner           | dai-spinner        |
