@@ -23,3 +23,17 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Changed
 
 - Refactored core component structure to integrate seamlessly with Material UI.
+
+## [1.0.2] - 2025-04-09
+
+### Added
+
+- **Daisy UI Support**: AlienX now supports the DaisyUI library in collaboration with the DaisyUI team.
+
+- Enhanced UI components with Daisy UI's robust design system and accessibility features.
+
+- Improved developer experience with better component documentation and API consistency.
+
+### Changed
+
+- Refactored core component structure to integrate seamlessly with DaisyUI.

@@ -6,13 +6,13 @@
 
 ## Features
 
-- 🧩 Multi-Framework Support – Generate UI snippets for Alien UI, AlienUI React, Material UI, Daisy UI in one extension.
-- ⚡ Pre-built UI Components – Instantly add Button, Card, Input, Popover, Table, and more across supported libraries.
-- 🔄 Web & Mobile Ready – Snippets for both web and mobile (React Native) components.
-- 🎨 Multiple Styling Variants – Easily switch between themes like galaxy, earth, and mars (for AlienUI and AlienUI-React) or predefined styles from other UI libraries.
-- 🛠️ Flexible & Customizable – Modify generated snippets to match your project’s design system effortlessly.
-- ⏳ Save Time & Reduce Boilerplate – Generate full component structures in seconds for rapid development.
-- 🎛 Component Selector – Choose from Alien UI, Alien UI React, Material UI, or Daisy UI.
+- Multi-Framework Support – Generate UI snippets for Alien UI, AlienUI React, Material UI, Daisy UI in one extension.
+- Pre-built UI Components – Instantly add Button, Card, Input, Popover, Table, and more across supported libraries.
+- Web & Mobile Ready – Snippets for both web and mobile (React Native) components.
+- Multiple Styling Variants – Easily switch between themes like galaxy, earth, and mars (for AlienUI and AlienUI-React) or predefined styles from other UI libraries.
+- Flexible & Customizable – Modify generated snippets to match your project’s design system effortlessly.
+- Save Time & Reduce Boilerplate – Generate full component structures in seconds for rapid development.
+- Component Selector – Choose from Alien UI, Alien UI React, Material UI, or Daisy UI.
 
 ## Installation
 
@@ -61,7 +61,7 @@ The table below shows the available components and their respective prefix.
 | `Switch`       | switch-web                 | switch-app                        | mui-switch            | dai-switch         |
 | `Tab`          |                            | tab-app                           | mui-tab               | dai-tab            |
 | `Table`        | table-web                  | table-app                         | mui-table             | dai-table          |
-| `Toast`        | toast-web                  | toast-app                         |                       |                    |
+| `Toast`        | toast-web                  | toast-app                         |                       | dai-toast          |
 
 ## Contributing
 
