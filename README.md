@@ -28,8 +28,9 @@ Before usage, make sure you've read documentation for the supported UI libraries
 
 - [AlienUI](https://alienui.vercel.app) for AlienUI React Native documentation.
 - [AlienUI-React](https://alienui-react.vercel.app) for AlienUI React documentation.
-- [MaterialUI](https://mui.com/material-ui) for MaterialUI documentation.
 - [DaisyUI](https://daisyui.com) for DaisyUI documentation.
+- [GluestackUI](https://gluestack.io) for GluestackUI documentation.
+- [MaterialUI](https://mui.com/material-ui) for MaterialUI documentation.
 
 Create a `.tsx` or `.jsx` file in your project folder and Simply type the prefix for the UI snippet you need, and let AlienX do the rest!
 
@@ -37,31 +38,31 @@ The table below shows the available components and their respective prefix.
 
 **Note:** For AlienUI & AlienUI-React component library, All components have both Javascript and Typescript support but Some reusable components have a seperate Javascript and Typescript(tsx) version such as (Accordion, Alert, Button, Dropdown) for better type safety.
 
-| **Component**  | **Prefix (AlienUI React)** | **Prefix (AlienUI React Native)** | **Prefix MaterialUI** | **Prefix DaisyUI** |
-| -------------- | -------------------------- | --------------------------------- | --------------------- | ------------------ |
-| `Accordion`    | accordion-web              | accordion-app                     | mui-accordion         | dai-accordion      |
-| `Alert`        | alert-web                  | alert-app                         | mui-alert             | dai-alert          |
-| `Avatar`       | avatar-web                 | avatar-app                        | mui-avatar            | dai-avatar         |
-| `Badge`        | badge-web                  | badge-app                         | mui-badge             | dai-badge          |
-| `BreadCrumbs`  | breadcrumb-web             | breadcrumb-app                    | mui-breadcrumb        | dai-breadcrumb     |
-| `Button`       | button-web                 | button-app                        | mui-btn               | dai-btn            |
-| `Card`         | card-web                   | card-app                          | mui-card              | dai-card           |
-| `Carousel`     | carousel-web               | carousel-app                      |                       | dai-carousel       |
-| `Checkbox`     | checkbox-web               | checkbox-app                      | mui-checkbox          | dai-checkbox       |
-| `Dropdown`     | dropdown-web               | dropdown-app                      | mui-dropdown          | dai-dropdown       |
-| `Input`        | input-web                  | input-app                         | mui-input             | dai-input          |
-| `Modal`        | modal-web                  | modal-app                         | mui-modal             | dai-modal          |
-| `Navbar`       | nav-web                    |                                   |                       | dai-nav            |
-| `Notification` | notification-web           | notification-app                  |                       |                    |
-| `Pagination`   | pagination-web             | pagination-app                    | mui-pagination        | dai-pagination     |
-| `Popover`      | popover-web                | popover-app                       | mui-popover           |                    |
-| `Progress Bar` | progress-web               | progress-app                      | mui-progress          | dai-progress       |
-| `Search Bar`   | search-web                 | search-app                        |                       |                    |
-| `Spinner`      | spinner-web                | spinner-app                       | mui-spinner           | dai-spinner        |
-| `Switch`       | switch-web                 | switch-app                        | mui-switch            | dai-switch         |
-| `Tab`          |                            | tab-app                           | mui-tab               | dai-tab            |
-| `Table`        | table-web                  | table-app                         | mui-table             | dai-table          |
-| `Toast`        | toast-web                  | toast-app                         |                       | dai-toast          |
+| **Component** | **Prefix (AlienUI React)** | **Prefix (AlienUI React Native)** | **Prefix DaisyUI** | **Prefix Gluestack UI** | **Prefix MaterialUI** |
+| ------------- | -------------------------- | --------------------------------- | ------------------ | ----------------------- | --------------------- |
+| Accordion     | accordion-web              | accordion-app                     | dai-accordion      | glu-accordion           | mui-accordion         |
+| Alert         | alert-web                  | alert-app                         | dai-alert          | glu-alert               | mui-alert             |
+| Avatar        | avatar-web                 | avatar-app                        | dai-avatar         | glu-avatar              | mui-avatar            |
+| Badge         | badge-web                  | badge-app                         | dai-badge          | glu-badge               | mui-badge             |
+| BreadCrumbs   | breadcrumb-web             | breadcrumb-app                    | dai-breadcrumb     | glu-breadcrumb          | mui-breadcrumb        |
+| Button        | button-web                 | button-app                        | dai-btn            | glu-btn                 | mui-btn               |
+| Card          | card-web                   | card-app                          | dai-card           | glu-card                | mui-card              |
+| Carousel      | carousel-web               | carousel-app                      | dai-carousel       |                         |                       |
+| Checkbox      | checkbox-web               | checkbox-app                      | dai-checkbox       | glu-checkbox            | mui-checkbox          |
+| Dropdown      | dropdown-web               | dropdown-app                      | dai-dropdown       | glu-dropdown            | mui-dropdown          |
+| Input         | input-web                  | input-app                         | dai-input          | glu-input               | mui-input             |
+| Modal         | modal-web                  | modal-app                         | dai-modal          | glu-modal               | mui-modal             |
+| Navbar        | nav-web                    |                                   | dai-nav            |                         |                       |
+| Notification  | notification-web           | notification-app                  |                    |                         |                       |
+| Pagination    | pagination-web             | pagination-app                    | dai-pagination     | glu-pagination          | mui-pagination        |
+| Popover       | popover-web                | popover-app                       |                    | glu-popover             | mui-popover           |
+| Progress Bar  | progress-web               | progress-app                      | dai-progress       | glu-progress            | mui-progress          |
+| Search Bar    | search-web                 | search-app                        |                    |                         |                       |
+| Spinner       | spinner-web                | spinner-app                       | dai-spinner        | glu-spinner             | mui-spinner           |
+| Switch        | switch-web                 | switch-app                        | dai-switch         | glu-switch              | mui-switch            |
+| Tab           |                            | tab-app                           | dai-tab            | glu-tab                 | mui-tab               |
+| Table         | table-web                  | table-app                         | dai-table          | glu-table               | mui-table             |
+| Toast         | toast-web                  | toast-app                         | dai-toast          | glu-toast               |                       |
 
 ## Contributing
 
