@@ -6,13 +6,13 @@
 
 ## Features
 
-- Multi-Framework Support – Generate UI snippets for Alien UI, AlienUI React, Material UI, Daisy UI in one extension.
+- Multi-Framework Support – Generate UI snippets for Alien UI, AlienUI React, Daisy UI, Gluestack UI and Material UI in one extension.
 - Pre-built UI Components – Instantly add Button, Card, Input, Popover, Table, and more across supported libraries.
 - Web & Mobile Ready – Snippets for both web and mobile (React Native) components.
 - Multiple Styling Variants – Easily switch between themes like galaxy, earth, and mars (for AlienUI and AlienUI-React) or predefined styles from other UI libraries.
 - Flexible & Customizable – Modify generated snippets to match your project’s design system effortlessly.
 - Save Time & Reduce Boilerplate – Generate full component structures in seconds for rapid development.
-- Component Selector – Choose from Alien UI, Alien UI React, Material UI, or Daisy UI.
+- Component Library Selector – Choose from Alien UI, Alien UI React, Gluestack UI, Daisy UI or Material UI.
 
 ## Installation
 
