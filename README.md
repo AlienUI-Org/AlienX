@@ -77,6 +77,6 @@ This project is licensed under the **MIT License** – free to use and modify.
 ## About AlienUI Team
 
 **AlienUI Team** is a modern design and development team focused on creating developer-friendly tools and UI libraries.  
-Follow us on [Website](https://alienui.vercel.app) | [Twitter](https://x.com/alienui) | [Linkedin](https://linkedin.com/company/alien-ui) | [GitHub](https://github.com/AlienUI-Org).
+Follow us on [GitHub](https://github.com/AlienUI-Org) | [Twitter](https://x.com/alienui) | [Linkedin](https://linkedin.com/company/alien-ui).
 
 _Developed with ❤️ by the AlienUI Team_
