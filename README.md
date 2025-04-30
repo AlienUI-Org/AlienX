@@ -1,6 +1,6 @@
 # AlienX – Bringing UI components into your IDE
 
-**AlienX** is a powerful VS Code snippet extension crafted by the **AlienUI** team, designed to speed up your web and app development with ready-to-use UI components and utility snippets.
+A powerful VS Code snippet extension crafted by the **AlienUI** team, designed to speed up your web and app development with ready-to-use UI components and utility snippets.
 
 ![Demo Tutorial Video](alienx.gif)
 
