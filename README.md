@@ -44,7 +44,7 @@ The table below shows the available components and their respective prefix.
 | Alert         | alert-web                  | alert-app                         | dai-alert          | glu-alert               | mui-alert             |
 | Avatar        | avatar-web                 | avatar-app                        | dai-avatar         | glu-avatar              | mui-avatar            |
 | Badge         | badge-web                  | badge-app                         | dai-badge          | glu-badge               | mui-badge             |
-| BreadCrumbs   | breadcrumb-web             | breadcrumb-app                    | dai-breadcrumb     | glu-breadcrumb          | mui-breadcrumb        |
+| BreadCrumbs   | breadcrumb-web             | breadcrumb-app                    | dai-breadcrumb     |                         | mui-breadcrumb        |
 | Button        | button-web                 | button-app                        | dai-btn            | glu-btn                 | mui-btn               |
 | Card          | card-web                   | card-app                          | dai-card           | glu-card                | mui-card              |
 | Carousel      | carousel-web               | carousel-app                      | dai-carousel       |                         |                       |
