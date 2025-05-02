@@ -54,7 +54,7 @@ The table below shows the available components and their respective prefix.
 | Modal         | modal-web                  | modal-app                         | dai-modal          | glu-modal               | mui-modal             |
 | Navbar        | nav-web                    |                                   | dai-nav            |                         |                       |
 | Notification  | notification-web           | notification-app                  |                    |                         |                       |
-| Pagination    | pagination-web             | pagination-app                    | dai-pagination     | glu-pagination          | mui-pagination        |
+| Pagination    | pagination-web             | pagination-app                    | dai-pagination     |                         | mui-pagination        |
 | Popover       | popover-web                | popover-app                       |                    | glu-popover             | mui-popover           |
 | Progress Bar  | progress-web               | progress-app                      | dai-progress       | glu-progress            | mui-progress          |
 | Search Bar    | search-web                 | search-app                        |                    |                         |                       |
