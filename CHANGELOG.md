@@ -37,3 +37,17 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Changed
 
 - Refactored core component structure to integrate seamlessly with DaisyUI.
+
+## [1.0.3] - 2025-05-02
+
+### Added
+
+- **Gluestack UI Support**: AlienX now supports the GluestackUI library in collaboration with the GluestackUI team.
+
+- Enhanced UI components with Gluestack UI's robust design system and accessibility features.
+
+- Improved developer experience with better component documentation and API consistency.
+
+### Changed
+
+- Refactored core component structure to integrate seamlessly with GluestackUI.
