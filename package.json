@@ -4,7 +4,7 @@
   "publisher": "AlienUI",
   "icon": "alienx.jpg",
   "description": "A collection of UI component snippet from several UI libraries",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "engines": {
     "vscode": "^1.96.0"
   },
