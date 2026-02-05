@@ -26,8 +26,8 @@ jobs:
       - name: Skip VS Code integration tests in CI
         run: echo "Skipping vscode-test (requires GUI)"
 
-      - name: Build extension
-        run: npm run build
+      - name: Compile extension
+        run: npm run compile
 
       - name: Install vsce
         run: npm install -g @vscode/vsce
